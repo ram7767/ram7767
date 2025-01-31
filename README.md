@@ -75,11 +75,11 @@
 
 <h3 align="left">About me:</h3>
 
-- 🔭 I’m currently working on [iOS projects]
+- 🔭 I’m currently working on [Payslate](https://payslate.dotmite.com/)
 
-- 🌱 I’m currently learning **Flutter, SwiftUI, SwiftData, AI, Deep-Learning**
+- 🌱 I’m currently learning **SwiftUI, SwiftData, AI, Deep-Learning**
 
-- 👨‍💻 All of my projects are available at [https://ram7767.github.io/ram_Personal_Protfolio/](https://ram7767.github.io/ram_Personal_Protfolio/)
+- 👨‍💻 All of my projects are available at my [Profolio](https://ram7767.github.io/ram7767/)
 
 
 

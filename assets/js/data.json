@@ -1,0 +1,164 @@
+{
+  "name": "Ratnakaram Rama Narasimha Raju",
+  "title": "Mobile Application Developer",
+  "profilePic": "./assets/images/ram_profile_pic.jpg",
+  "email": "rramanarasimharaju@gmail.com",
+  "phone": "+91 6281044186",
+  "location": "Nandyal, Kurnool, Andhra Pradesh",
+  "socialLinks": {
+    "linkedin": "https://www.linkedin.com/in/ratnakaram-rama-narasimha-raju-535469197/",
+    "facebook": "https://www.facebook.com/ratnakar.ram.1027/",
+    "instagram": "https://www.instagram.com/ratnakar.ram.1027/"
+  },
+  "about": {
+    "intro": "Innovative and driven Computer Science fresher with a passion for turning creative ideas into functional solutions. Eager to embark on a rewarding journey in iOS app development, I bring a strong foundation in app development and data analysis to the table. My dedication to continuous learning, problem-solving mindset, and commitment to excellence set the stage for my success in the dynamic field of mobile application development.",
+    "details": "I have a proven track record of participating in hackathons and coding competitions, where I showcased my ability to think creatively and develop solutions under tight deadlines. This experience has honed my ability to work effectively in a fast-paced and collaborative environment."
+  },
+  "services": [
+    {
+      "title": "iOS App Development",
+      "description": "The most modern and high-quality design made at a professional level.",
+      "icon": "./assets/images/icon-app.svg"
+    },
+    {
+      "title": "Flutter App Development",
+      "description": "The robust and fast deployment across platforms like Android and iOS.",
+      "icon": "./assets/images/icon-app.svg"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Rajeev Gandhi Memorial College Of Engineering & Technology",
+      "years": "2020 - 2023",
+      "degree": "Computer Science & Information Technology"
+    },
+    {
+      "institution": "GMR Polytechnic College",
+      "years": "2017 - 2020",
+      "degree": "Electrical and Electronics Engineering"
+    },
+    {
+      "institution": "Gitanjali E.M Grammar High School",
+      "years": "2016 - 2017",
+      "degree": "Secondary Board Education A.P."
+    }
+  ],
+  "experience": [
+    {
+      "position": "iOS App Developer",
+      "years": "2023 — Present",
+      "company": "SoftSuave Technology",
+      "description": "Working in iOS development as an app Developer."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Swift",
+      "level": "95"
+    },
+    {
+      "name": "Flutter",
+      "level": "95"
+    },
+    {
+      "name": "Swift-UI",
+      "level": "80"
+    },
+    {
+      "name": "Python",
+      "level": "95"
+    },
+    {
+      "name": "Firebase",
+      "level": "95"
+    },
+    {
+      "name": "Cross-Platform App Development",
+      "level": "95"
+    },
+    {
+      "name": "Web Development (Django, Flask API)",
+      "level": "70"
+    },
+    {
+      "name": "Version Control",
+      "level": "80"
+    },
+    {
+      "name": "Operating System",
+      "level": "80"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "HealthPass (HSBC)",
+      "role": "iOS Dev",
+      "image": "./assets/images/CAP.PA.svg",
+      "quoteIcon": "./assets/images/icon-quote.svg",
+      "review": "Worked as an iOS Developer. Developed key features, integrated Deeplinks, and added UI & Unit test cases.",
+      "appLink": "https://example.com/healthpass"
+    },
+    {
+      "name": "SmartWait",
+      "role": "iOS Dev",
+      "image": "./assets/images/smartwait.png",
+      "quoteIcon": "./assets/images/icon-quote.svg",
+      "review": "Worked as an iOS Developer. Implemented real-time queue management, improved user experience, and handled API integrations.",
+      "appLink": "https://example.com/smartwait"
+    },
+    {
+      "name": "Playdate",
+      "role": "iOS Dev",
+      "image": "./assets/images/playdate-logo.png",
+      "quoteIcon": "./assets/images/icon-quote.svg",
+      "review": "Worked as an iOS Developer. Designed social engagement features, managed push notifications, and enhanced UI/UX.",
+      "appLink": "https://example.com/playdate"
+    },
+    {
+      "name": "MRC",
+      "role": "iOS Dev",
+      "image": "./assets/images/MRC.png",
+      "quoteIcon": "./assets/images/icon-quote.svg",
+      "review": "Worked as an iOS Developer. Led the development of a secure messaging module, integrated third-party APIs, and ensured app stability.",
+      "appLink": "https://example.com/mrc"
+    },
+    {
+      "name": "PaySlate",
+      "role": "Flutter Dev",
+      "image": "./assets/images/payslate_logo.svg",
+      "quoteIcon": "./assets/images/icon-quote.svg",
+      "review": "Worked as a Flutter Developer. Built a cross-platform payment solution, implemented state management, and implemented the book sharing feature.",
+      "appLink": "https://example.com/payslate"
+    }
+  ],
+  "clients": [
+    {
+      "logo": "./assets/images/hsbc.png",
+      "company_name": "HSBC",
+      "reference": "#"
+    },
+    {
+      "logo": "./assets/images/CAP.PA.svg",
+      "company_name": "Capgmini",
+      "reference": "#"
+    },
+    {
+      "logo": "./assets/images/soft_suave_logo.jpeg",
+      "company_name": "Soft Suave",
+      "reference": "#"
+    },
+    {
+      "logo": "./assets/images/dotmite_logo.jpeg",
+      "company_name": "Dotmite",
+      "reference": "#"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Best Hire Award",
+      "date": "30/10/2024",
+      "image": "./assets/images/award.png",
+      "description": "I was honored with the Best Hire Award for my exceptional performance, the adoption of new technologies, successful management of multiple projects, and the ability to foster a collaborative and team-oriented work environment."
+    }
+  ]
+}

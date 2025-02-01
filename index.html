@@ -42,18 +42,19 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img class="rounded-corners" src="./assets/images/ram_profile_pic.jpg" alt="Ratnakaram Rama Narasimha Raju" width="80">
+          <img class="rounded-corners" src="./assets/images/ram_profile_pic.jpg" alt="Ratnakaram Rama Narasimha Raju"
+            width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Ratnakaram Rama Narasimha Raju">Ratnakaram Rama Narasimha Raju</h1>
+          <h1 class="name" id="name" title="Ratnakaram Rama Narasimha Raju"></h1>
           <ul>
             <li>
-              <p class="title">iOS Developer & Data Analsyst</p> 
+              <p class="title" id="title">iOS Developer & Data Analsyst</p>
             </li>
           </ul>
-          
-          
+
+
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -79,7 +80,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:rrnram998539@gmail.com" class="contact-link">rrnram998539@gmail.com</a>
+              <a href="mailto:rrnram998539@gmail.com" id="email" class="contact-link">rrnram998539@gmail.com</a>
             </div>
 
           </li>
@@ -93,7 +94,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+916281044186" class="contact-link">+91 62810-44186</a>
+              <a href="tel:+916281044186" class="contact-link" id="phone">+91 62810-44186</a>
             </div>
 
           </li>
@@ -107,7 +108,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Nandyal, Kurnool, AndhraPradesh</address>
+              <address id="location">Nandyal, Kurnool, AndhraPradesh</address>
             </div>
 
           </li>
@@ -119,20 +120,8 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/ratnakaram-rama-narasimha-raju-535469197/" class="social-link">
+            <a id="linkedin" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/ratnakar.ram.1027/" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/ratnakar.ram.1027/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
@@ -187,19 +176,8 @@
         </header>
 
         <section class="about-text">
-          <p>
-            Innovative and driven Computer Science fresher with a passion for turning creative ideas into functional solutions.
-             Eager to embark on a rewarding journey in iOS app development,
-              I bring a strong foundation in app development and data analysis to the table.
-               My dedication to continuous learning, problem-solving mindset, 
-               and commitment to excellence set the stage for my success in the dynamic field of mobile application development.
-          </p>
-
-          <p>
-            I have a proven track record of participating in hackathons and coding competitions,
-             where I showcased my ability to think creatively and develop solutions under tight deadlines.
-             This experience has honed my ability to work effectively in a fast-paced and collaborative environment.
-          </p>
+          <p id="about-intro"></p>
+          <p id="about-details"></p>
         </section>
 
 
@@ -233,6 +211,94 @@
 
         </section>
 
+        <!--
+          - achievements
+        -->
+
+        <section class="achievements">
+
+          <h3 class="h3 achievements-title">Achievements</h3>
+
+          <ul class="achievements-list">
+
+            <li class="achievements-item">
+
+              <div class="achievements-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile icon" width="40">
+              </div>
+
+              <div class="achievements-content-box">
+                <h4 class="h4 achievements-item-title">iOS App Development</h4>
+
+                <p class="achievements-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Projects</h3>
+          <ul id="testimonials-container" class="testimonials-list has-scrollbar">
+            <!-- Testimonials will be dynamically added here -->
+          </ul>
+        </section>
+
+        <!-- Testimonials Modal -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="" alt="Testimonial Avatar" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title></h4>
+              <time datetime="" data-modal-date></time>
+              <div data-modal-text>
+                <p></p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
 
       </article>
       <!--
@@ -255,7 +321,7 @@
             <h3 class="h3">Education</h3>
           </div>
 
-          <ol class="timeline-list">
+          <ol class="timeline-list" id="education-list">
 
             <li class="timeline-item">
 
@@ -307,7 +373,7 @@
             <h3 class="h3">Experience</h3>
           </div>
 
-          <ol class="timeline-list">
+          <ol class="timeline-list" id="experience-list">
 
             <li class="timeline-item">
 
@@ -425,7 +491,7 @@
 
         </section>
 
-      </article>    
+      </article>
 
     </div>
 

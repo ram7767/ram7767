@@ -8,7 +8,8 @@
   "socialLinks": {
     "linkedin": "https://www.linkedin.com/in/ratnakaram-rama-narasimha-raju-535469197/",
     "facebook": "https://www.facebook.com/ratnakar.ram.1027/",
-    "instagram": "https://www.instagram.com/ratnakar.ram.1027/"
+    "instagram": "https://www.instagram.com/ratnakar.ram.1027/",
+    "github": "https://github.com/ram7767"
   },
   "about": {
     "intro": "Innovative and driven Computer Science fresher with a passion for turning creative ideas into functional solutions. Eager to embark on a rewarding journey in iOS app development, I bring a strong foundation in app development and data analysis to the table. My dedication to continuous learning, problem-solving mindset, and commitment to excellence set the stage for my success in the dynamic field of mobile application development.",
@@ -23,6 +24,11 @@
     {
       "title": "Flutter App Development",
       "description": "The robust and fast deployment across platforms like Android and iOS.",
+      "icon": "./assets/images/icon-app.svg"
+    },
+    {
+      "title": "Android App Development",
+      "description": "Native Android applications with modern Kotlin and Java implementation.",
       "icon": "./assets/images/icon-app.svg"
     }
   ],
@@ -63,6 +69,14 @@
     {
       "name": "Swift-UI",
       "level": "80"
+    },
+    {
+      "name": "Kotlin",
+      "level": "90"
+    },
+    {
+      "name": "Android Development",
+      "level": "90"
     },
     {
       "name": "Python",

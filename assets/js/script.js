@@ -1,362 +1,332 @@
-'use strict';
+// ==================== SCRIPT.JS ====================
+// Save this entire file as: script.js
 
-
-
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
+// Load portfolio data from data.json
+async function loadData() {
+  try {
+    const response = await fetch('data.json');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error loading data:', error);
+    return null;
+  }
 }
 
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
+// Apply theme
+function applyTheme(theme) {
+  const root = document.documentElement;
 
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
-  });
-
+  // Map the theme properties from your JSON to the CSS variables
+  root.style.setProperty('--primary-color', theme.accentPurple);
+  root.style.setProperty('--secondary-color', theme.accentLightPurple);
+  root.style.setProperty('--accent-color', theme.highlight);
+  root.style.setProperty('--text-color', theme.textPrimary);
+  root.style.setProperty('--text-light', theme.textSecondary);
+  root.style.setProperty('--bg-light', theme.secondaryBg);
+  root.style.setProperty('--bg-white', theme.cardBg);
+  root.style.setProperty('--gradient-primary', `linear-gradient(135deg, ${theme.accentPurple} 0%, ${theme.accentLightPurple} 100%)`);
+  root.style.setProperty('--gradient-skill', `linear-gradient(90deg, ${theme.accentPurple}, ${theme.accentLightPurple})`);
 }
 
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+// Load portfolio content
+function loadPortfolio(data) {
+  // Apply theme
+  applyTheme(data.theme);
 
+  // Set short name in tab title
+  document.title = data.shortName || data.name || 'Portfolio';
 
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-// select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+  // Update favicon if provided in data
+  if (data.favicon) {
+    const favicon = document.querySelector('link[rel="icon"]');
+    if (favicon) {
+      favicon.href = data.favicon;
     } else {
-      filterItems[i].classList.remove("active");
+      // Create favicon link if it doesn't exist
+      const newFavicon = document.createElement('link');
+      newFavicon.rel = 'icon';
+      newFavicon.type = 'image/x-icon';
+      newFavicon.href = data.favicon;
+      document.head.appendChild(newFavicon);
     }
-
   }
 
-}
+  // Update resume button functionality with resume file from data
+  const resumeBtn = document.getElementById('resume-btn');
+  const resumeBtnMobile = document.getElementById('resume-btn-mobile');
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+  if (data.resumeFile) {
+    const downloadResume = function(e) {
+      e.preventDefault();
+      // Create a temporary link and trigger download
+      const link = document.createElement('a');
+      link.href = data.resumeFile;
+      link.download = 'Resume-' + (data.name || 'User') + '.pdf';
+      link.target = '_blank'; // Open in new tab to allow download
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
 
-for (let i = 0; i < filterBtn.length; i++) {
-
-  filterBtn[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
-  });
-
-}
-
-
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
+    if (resumeBtn) {
+      resumeBtn.onclick = downloadResume;
     }
 
-  });
-}
-
-
-
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      console.log(pages[i].dataset.page)
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        console.log(navigationLinks[i])
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+    if (resumeBtnMobile) {
+      resumeBtnMobile.onclick = downloadResume;
     }
+  }
 
+  // Load personal info
+  document.getElementById('short-name-text').textContent = data.shortName;
+  document.getElementById('hero-name').textContent = data.name;
+  document.getElementById('hero-title').textContent = data.title;
+  document.getElementById('hero-bio').textContent = data.tagline;
+  document.getElementById('hero-img').src = data.profilePic;
+
+  // Load stats
+  if (data.stats) {
+    document.getElementById('app-launches').textContent = data.stats.appLaunches;
+    document.getElementById('performance-improvement').textContent = data.stats.performanceImprovement;
+    document.getElementById('bug-reduction').textContent = data.stats.bugReduction;
+    document.getElementById('user-satisfaction').textContent = data.stats.userSatisfaction;
+  }
+
+  // Load about
+  document.getElementById('about-title').textContent = "About Me";
+  document.getElementById('about-desc').textContent = data.about.intro;
+  document.getElementById('about-passion').textContent = data.about.details;
+
+  // Load skills
+  const skillsContainer = document.getElementById('skills-container');
+  skillsContainer.innerHTML = '';
+  data.skills.forEach((skill, index) => {
+    const colorClass = `color-${(index % 9) + 1}`; // 9 different colors
+    const skillItem = document.createElement('div');
+    skillItem.className = 'skill-item';
+    skillItem.innerHTML = `
+            <div class="skill-name">${skill.name}</div>
+            <div class="skill-tagline ${colorClass}">${skill.tagline || ''}</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 0%" data-width="${skill.level}"></div>
+            </div>
+        `;
+    skillsContainer.appendChild(skillItem);
   });
-}
 
+  // Load projects (using testimonials as projects)
+  const projectsContainer = document.getElementById('projects-container');
+  projectsContainer.innerHTML = '';
+  data.testimonials.forEach(project => {
+    const projectCard = document.createElement('div');
+    projectCard.className = 'project-card';
+    projectCard.innerHTML = `
+            <img src="${project.image}" alt="${project.name}" class="project-image">
+            <div class="project-content">
+                <h3>${project.name}</h3>
+                <p>${project.review}</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">${project.role}</span>
+                </div>
+                <div class="project-links">
+                    <a href="${project.appLink}" target="_blank">View Project →</a>
+                </div>
+            </div>
+        `;
+    projectsContainer.appendChild(projectCard);
+  });
 
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('./assets/js/data.json')
-    .then(response => response.json())
-    .then(data => {
-      // Update the DOM with the data
-      document.getElementById('name').textContent = data.name;
-      document.getElementById('title').textContent = data.title;
-      document.getElementById('email').textContent = data.email;
-      document.getElementById('email').href = `mailto:${data.email}`;
-      document.getElementById('phone').textContent = data.phone;
-      document.getElementById('phone').href = `tel:${data.phone}`;
-      document.getElementById('location').textContent = data.location;
+  // Load experience
+  const experienceContainer = document.getElementById('experience-container');
+  experienceContainer.innerHTML = '';
+  data.experience.forEach(exp => {
+    const timelineItem = document.createElement('div');
+    timelineItem.className = 'timeline-item';
+    timelineItem.innerHTML = `
+            <h3>${exp.position}</h3>
+            <div class="subtitle">${exp.subtitle || ''}</div>
+            <div class="company">${exp.company}</div>
+            <div class="date">${exp.years}</div>
+            <p>${exp.description}</p>
+        `;
+    experienceContainer.appendChild(timelineItem);
+  });
 
-      populateSocialLinks(data.socialLinks);
-
-      document.getElementById('about-intro').textContent = data.about.intro;
-      document.getElementById('about-details').textContent = data.about.details;
-
-      populateServices(data.services);
-
-      populateTestimonials(data.testimonials)
-
-      populateEducation(data.education);
-
-      populateExperience(data.experience);
-
-      populateSkills(data.skills);
-
-      populateClients(data.clients);
-
-      populateAchievements(data.achievements);
-
-    })
-    .catch(error => {
-      console.error('Error loading JSON data:', error);
+  // Load clients section
+  const clientsContainer = document.getElementById('clients-container');
+  if (clientsContainer && data.clients) {
+    clientsContainer.innerHTML = '';
+    data.clients.forEach(client => {
+      const clientItem = document.createElement('div');
+      clientItem.className = 'client-item';
+      clientItem.innerHTML = `
+        <img src="${client.logo}" alt="${client.company_name}" class="client-logo" title="${client.company_name}">
+      `;
+      clientsContainer.appendChild(clientItem);
     });
-  setupModalActions();
+  }
 
+  // Load contact info
+  const contactInfo = document.getElementById('contact-info');
+  contactInfo.innerHTML = '';
+  const contactItems = [
+    { icon: '📧', label: 'Email', value: data.email },
+    { icon: '📍', label: 'Location', value: data.location }
+  ];
+  contactItems.forEach(item => {
+    const contactItem = document.createElement('div');
+    contactItem.className = 'contact-item';
+    contactItem.innerHTML = `
+            <div class="contact-icon">${item.icon}</div>
+            <div>
+                <strong>${item.label}</strong><br>
+                ${item.value}
+            </div>
+        `;
+    contactInfo.appendChild(contactItem);
+  });
+
+  // Load social links
+  const socialLinks = document.getElementById('social-links');
+  socialLinks.innerHTML = '';
+  Object.keys(data.socialLinks).forEach(platform => {
+    const link = data.socialLinks[platform];
+    const a = document.createElement('a');
+    a.href = link;
+    a.target = '_blank';
+
+    // Determine icon based on platform
+    let iconClass = '';
+    switch(platform.toLowerCase()) {
+      case 'github':
+        iconClass = 'fab fa-github';
+        break;
+      case 'linkedin':
+        iconClass = 'fab fa-linkedin';
+        break;
+      case 'facebook':
+        iconClass = 'fab fa-facebook';
+        break;
+      case 'twitter':
+        iconClass = 'fab fa-twitter';
+        break;
+      case 'instagram':
+        iconClass = 'fab fa-instagram';
+        break;
+      case 'dribbble':
+        iconClass = 'fab fa-dribbble';
+        break;
+      case 'behance':
+        iconClass = 'fab fa-behance';
+        break;
+      case 'youtube':
+        iconClass = 'fab fa-youtube';
+        break;
+      default:
+        iconClass = 'fas fa-link'; // generic link icon
+    }
+
+    a.innerHTML = `<i class="${iconClass}"></i>`;
+    a.title = platform.charAt(0).toUpperCase() + platform.slice(1); // Show platform name on hover
+    socialLinks.appendChild(a);
+  });
+
+  // Footer text
+  document.getElementById('footer-text').textContent =
+    `© 2024 ${data.name}. All rights reserved.`;
+
+  // Animate skill bars after loading
+  setTimeout(() => {
+    document.querySelectorAll('.skill-progress').forEach(bar => {
+      const width = bar.getAttribute('data-width');
+      bar.style.width = width + '%';
+    });
+  }, 500);
+}
+
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
 });
 
-function populateSocialLinks(socialLinks) {
-  const socialList = document.querySelector(".social-list");
-  socialList.innerHTML = Object.entries(socialLinks)
-    .map(([platform, url]) => `
-      <li class="social-item">
-        <a href="${url}" class="social-link">
-          <ion-icon name="logo-${platform}"></ion-icon>
-        </a>
-      </li>
-    `)
-    .join("");
-}
-
-function populateServices(services) {
-  const servicesContainer = document.querySelector(".service-list");
-  servicesContainer.innerHTML = services.map(service => `
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="${service.icon}" alt="${service.title}" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">${service.title}</h4>
-        <p class="service-item-text">${service.description}</p>
-      </div>
-    </li>
-  `).join("");
-}
-
-function populateEducation(education) {
-  const educationContainer = document.getElementById("education-list");
-  if (!educationContainer) return;
-
-  educationContainer.innerHTML = education.map(edu => `
-    <li class="timeline-item">
-      <h4 class="h4 timeline-item-title">${edu.institution}</h4>
-      <span>${edu.years}</span>
-      <p class="timeline-text">${edu.degree}</p>
-    </li>
-  `).join("");
-}
-
-function populateExperience(experience) {
-  const experienceContainer = document.getElementById("experience-list");
-  if (!experienceContainer) return;
-
-  experienceContainer.innerHTML = experience.map(exp => `
-    <li class="timeline-item">
-      <h4 class="h4 timeline-item-title">${exp.position}</h4>
-      <span>${exp.years}</span>
-      <p class="timeline-text">${exp.description}</p>
-    </li>
-  `).join("");
-}
-
-function populateSkills(skills) {
-  const skillsContainer = document.querySelector(".skills-list");
-  skillsContainer.innerHTML = skills.map(skill => `
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">${skill.name}</h5>
-        <data value="${skill.level}">${skill.level}%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: ${skill.level}%;"></div>
-      </div>
-    </li>
-  `).join("");
-}
-
-
-
-function populateTestimonials(testimonials) {
-  const container = document.getElementById("testimonials-container");
-  if (!container) {
-    console.error("Container with ID 'testimonials-container' not found!");
-    return;
+// Form submission
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('.contact-form');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for your message! I will get back to you soon.');
+      e.target.reset();
+    });
   }
 
-  container.innerHTML = ""; // Clear previous content
+  // Resume button functionality
+  const resumeBtn = document.getElementById('resume-btn');
+  if (resumeBtn) {
+    resumeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      // The resume link will be updated after data is loaded
+    });
+  }
 
-  testimonials.forEach((testimonial, index) => {
-    const listItem = document.createElement("li");
-    listItem.classList.add("testimonials-item");
-    listItem.dataset.index = index;
+  // Mobile menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const resumeBtnMobile = document.getElementById('resume-btn-mobile');
 
-    listItem.innerHTML = `
-      <div class="content-card">
-        <figure class="testimonials-avatar-box">
-          <img src="${testimonial.image}" alt="${testimonial.name}" width="60"  height="70" data-testimonials-avatar>
-        </figure>
-        <h4 class="h4 testimonials-item-title" data-testimonials-title>${testimonial.name}</h4>
-        <div class="testimonials-text" data-testimonials-text>
-          <img src="${testimonial.quoteIcon}" alt="Quote Icon" width="20">
-          <p>${testimonial.review}</p>
-        </div>
-      </div>
-    `;
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
 
-    listItem.addEventListener("click", () => openModal(testimonial));
-    container.appendChild(listItem);
+    // Close menu when clicking on a link
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+  }
+
+  // Mobile resume button functionality will be handled in the main resume function below
+});
+
+// Skill bar animation on scroll
+const observerOptions = {
+  threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const width = entry.target.getAttribute('data-width');
+      entry.target.style.width = width + '%';
+    }
   });
-}
+}, observerOptions);
 
-function setupModalActions() {
-  const modal = document.querySelector(".modal-container");
-  const closeButton = document.querySelector("[data-modal-close-btn]");
-  const overlay = document.querySelector("[data-overlay]");
+// Initialize
+async function init() {
+  const data = await loadData();
+  if (data) {
+    loadPortfolio(data);
 
-  function closeModal() {
-    modal.classList.remove("active");
-    overlay.classList.remove("active"); // Ensure overlay is hidden
+    // Observe skill bars after loading
+    setTimeout(() => {
+      document.querySelectorAll('.skill-progress').forEach(bar => {
+        observer.observe(bar);
+      });
+    }, 100);
   }
-
-  closeButton.addEventListener("click", closeModal);
-  overlay.addEventListener("click", closeModal);
 }
 
-function openModal(testimonial) {
-  const modal = document.querySelector(".modal-container");
-  const overlay = document.querySelector("[data-overlay]");
-
-  document.querySelector("[data-modal-img]").src = testimonial.image;
-  document.querySelector("[data-modal-title]").textContent = testimonial.name;
-  document.querySelector("[data-modal-text] p").textContent = testimonial.review;
-
-  modal.classList.add("active");
-  overlay.classList.add("active"); // Ensure overlay is visible
-}
-
-
-function populateClients(clients) {
-  const clientsContainer = document.querySelector(".clients-list");
-  clientsContainer.innerHTML = clients
-    .map(client => `
-      <li class="clients-item">
-        <a href="${client.reference}"><img src="${client.logo}"  alt="${client.company_name}"></a>
-      </li>
-    `)
-    .join("");
-}
-
-function populateAchievements(achievements) {
-  const achievementsContainer = document.querySelector(".achievements-list");
-  achievementsContainer.innerHTML = achievements
-    .map(achievement => `  
-      <li class="achievements-item">
-       <div class="achievements-icon-box">
-         <img src="${achievement.image}" alt="${achievement.title}" width="60">
-      </div>
-      <div class="achievements-content-box">
-        <h4 class="h4 achievements-item-title">${achievement.title}</h4>
-        <p class="achievements-item-text">
-        ${achievement.description}
-        </p>
-        </div>
-      </li>  
-    `)
-    .join("");
-}
+// Start the app
+init();

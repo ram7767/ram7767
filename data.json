@@ -1,14 +1,46 @@
 {
+  "theme": {
+    "primaryBg": "#0a192f",
+    "secondaryBg": "#112240",
+    "cardBg": "#172a46",
+    "accentPurple": "#8b5cf6",
+    "accentLightPurple": "#a78bfa",
+    "textPrimary": "#8b5cf6",
+    "textSecondary": "#8892b0",
+    "highlight": "#64ffda"
+  },
   "name": "Ratnakaram Rama Narasimha Raju",
+  "shortName": "Ram",
   "title": "Mobile Application Developer",
+  "greeting": "Hi, I'm",
+  "tagline": "Crafting exceptional mobile experiences with Swift, SwiftUI and Flutter",
   "profilePic": "./assets/images/ram_profile_pic.jpg",
   "email": "rramanarasimharaju@gmail.com",
-  "phone": "+91 6281044186",
-  "location": "Nandyal, Kurnool, Andhra Pradesh",
+  "location": "Bengaluru, India",
+  "stats": {
+    "appLaunches": "20+",
+    "performanceImprovement": "40% avg",
+    "bugReduction": "95% avg",
+    "userSatisfaction": "4.9/5"
+  },
+  "featuredApp": {
+    "name": "HealthPass (HSBC)",
+    "tagline": "Your secure health companion",
+    "icon": "fas fa-heartbeat",
+    "rating": "4.9",
+    "downloads": "500K+",
+    "activeUsers": "200K+",
+    "tags": [
+      "Cross-Platform",
+      "iOS",
+      "Health Tracking",
+      "Security",
+      "Enterprise"
+    ],
+    "description": "Developed key features for HSBC's health tracking application, integrated Deeplinks, and added comprehensive UI & Unit test cases."
+  },
   "socialLinks": {
     "linkedin": "https://www.linkedin.com/in/ratnakaram-rama-narasimha-raju-535469197/",
-    "facebook": "https://www.facebook.com/ratnakar.ram.1027/",
-    "instagram": "https://www.instagram.com/ratnakar.ram.1027/",
     "github": "https://github.com/ram7767"
   },
   "about": {
@@ -51,56 +83,75 @@
   ],
   "experience": [
     {
-      "position": "iOS App Developer",
-      "years": "2023 — Present",
+      "position": "Mobile App Developer",
+      "subtitle": "Flutter & iOS App Developer",
+      "years": "2024 — Present",
       "company": "SoftSuave Technology",
-      "description": "Working in iOS development as an app Developer."
+      "description": "Leading Flutter and iOS app development, architecting scalable features, mentoring junior developers, and driving end-to-end delivery from design to App Store release."
+    },
+    {
+      "position": "Software Engineer",
+      "subtitle": "iOS App Developer",
+      "years": "2023 — 2024",
+      "company": "SoftSuave Technology",
+      "description": "Developed and maintained iOS applications using Swift, integrated REST APIs, optimized performance, and collaborated with cross-functional teams to deliver high-quality mobile solutions."
     }
   ],
   "skills": [
     {
       "name": "Swift",
-      "level": "95"
+      "level": "95",
+      "tagline": "Native iOS performance"
     },
     {
       "name": "Flutter",
-      "level": "95"
+      "level": "95",
+      "tagline": "Cross-platform efficiency"
     },
     {
       "name": "Swift-UI",
-      "level": "80"
+      "level": "80",
+      "tagline": "Modern UI design"
     },
     {
       "name": "Kotlin",
-      "level": "90"
+      "level": "90",
+      "tagline": "Android development"
     },
     {
       "name": "Android Development",
-      "level": "90"
+      "level": "90",
+      "tagline": "Native mobile apps"
     },
     {
       "name": "Python",
-      "level": "95"
+      "level": "95",
+      "tagline": "Automation & AI"
     },
     {
       "name": "Firebase",
-      "level": "95"
+      "level": "95",
+      "tagline": "Real-time backend"
     },
     {
       "name": "Cross-Platform App Development",
-      "level": "95"
+      "level": "95",
+      "tagline": "Efficient deployment"
     },
     {
       "name": "Web Development (Django, Flask API)",
-      "level": "70"
+      "level": "70",
+      "tagline": "Full-stack web"
     },
     {
       "name": "Version Control",
-      "level": "80"
+      "level": "80",
+      "tagline": "Collaborative coding"
     },
     {
       "name": "Operating System",
-      "level": "80"
+      "level": "80",
+      "tagline": "System optimization"
     }
   ],
   "testimonials": [
@@ -110,7 +161,7 @@
       "image": "./assets/images/CAP.PA.svg",
       "quoteIcon": "./assets/images/icon-quote.svg",
       "review": "Worked as an iOS Developer. Developed key features, integrated Deeplinks, and added UI & Unit test cases.",
-      "appLink": "https://example.com/healthpass"
+      "appLink": "https://www.hsbc.com.hk/healthpass/"
     },
     {
       "name": "SmartWait",
@@ -118,7 +169,7 @@
       "image": "./assets/images/smartwait.png",
       "quoteIcon": "./assets/images/icon-quote.svg",
       "review": "Worked as an iOS Developer. Implemented real-time queue management, improved user experience, and handled API integrations.",
-      "appLink": "https://example.com/smartwait"
+      "appLink": "https://apps.apple.com/in/app/milagro-smartwait/id1465908192#information"
     },
     {
       "name": "Playdate",
@@ -126,7 +177,7 @@
       "image": "./assets/images/playdate-logo.png",
       "quoteIcon": "./assets/images/icon-quote.svg",
       "review": "Worked as an iOS Developer. Designed social engagement features, managed push notifications, and enhanced UI/UX.",
-      "appLink": "https://example.com/playdate"
+      "appLink": "https://apps.apple.com/in/app/playdate-secure-family-chat/id1592518146"
     },
     {
       "name": "MRC",
@@ -142,14 +193,14 @@
       "image": "./assets/images/payslate_logo.svg",
       "quoteIcon": "./assets/images/icon-quote.svg",
       "review": "Worked as a Flutter Developer. Built a cross-platform payment solution, implemented state management, and implemented the book sharing feature.",
-      "appLink": "https://example.com/payslate"
+      "appLink": "https://apps.apple.com/in/app/payslate/id6737227735"
     }
   ],
   "clients": [
     {
       "logo": "./assets/images/hsbc.png",
       "company_name": "HSBC",
-      "reference": "#"
+      "reference": "https://www.hsbc.com.hk/healthpass/"
     },
     {
       "logo": "./assets/images/CAP.PA.svg",
@@ -159,20 +210,44 @@
     {
       "logo": "./assets/images/soft_suave_logo.jpeg",
       "company_name": "Soft Suave",
-      "reference": "#"
+      "reference": "https://www.softsuave.com/"
     },
     {
       "logo": "./assets/images/dotmite_logo.jpeg",
       "company_name": "Dotmite",
-      "reference": "#"
+      "reference": "https://apps.apple.com/in/app/payslate/id6737227735"
     }
   ],
   "achievements": [
     {
       "title": "Best Hire Award",
-      "date": "30/10/2024",
+      "date": "October 2024",
+      "icon": "fas fa-trophy",
       "image": "./assets/images/award.png",
-      "description": "I was honored with the Best Hire Award for my exceptional performance, the adoption of new technologies, successful management of multiple projects, and the ability to foster a collaborative and team-oriented work environment."
+      "description": "Honored with the Best Hire Award for exceptional performance, adoption of new technologies, successful management of multiple projects, and fostering a collaborative team environment."
+    },
+    {
+      "title": "iOS Development Excellence",
+      "date": "2023-Present",
+      "icon": "fab fa-apple",
+      "image": "./assets/images/icon-app.svg",
+      "description": "Demonstrated expertise in iOS app development using Swift and SwiftUI, delivering high-quality applications with exceptional user experiences."
+    },
+    {
+      "title": "Cross-Platform Specialist",
+      "date": "2022-Present",
+      "icon": "fas fa-code-branch",
+      "image": "./assets/images/icon-app.svg",
+      "description": "Successfully developed and deployed cross-platform applications using Flutter and React Native, reaching millions of users worldwide."
+    },
+    {
+      "title": "Team Leadership",
+      "date": "2023-Present",
+      "icon": "fas fa-users-cog",
+      "image": "./assets/images/icon-app.svg",
+      "description": "Led development teams in implementing agile methodologies, improving delivery speed and code quality across multiple projects."
     }
-  ]
+  ],
+  "resumeFile": "./assets/resume/Ram_Resume.pdf",
+  "favicon": "./assets/images/ramIcon.ico"
 }

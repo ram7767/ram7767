@@ -94,25 +94,55 @@ function loadPortfolio(data) {
   }
 
   // Load about
-  document.getElementById('about-title').textContent = "About Me";
-  document.getElementById('about-desc').textContent = data.about.intro;
-  document.getElementById('about-passion').textContent = data.about.details;
+  document.getElementById('about-background').textContent = data.about.intro;
+  document.getElementById('about-approach').textContent = data.about.details;
+
+  // Load education
+  const educationContainer = document.getElementById('about-education-list');
+  educationContainer.innerHTML = '';
+  data.education.forEach(edu => {
+    const eduItem = document.createElement('div');
+    eduItem.className = 'education-item';
+    eduItem.innerHTML = `
+      <h4>${edu.institution}</h4>
+      <div class="years">${edu.years}</div>
+      <div class="degree">${edu.degree}</div>
+    `;
+    educationContainer.appendChild(eduItem);
+  });
 
   // Load skills
   const skillsContainer = document.getElementById('skills-container');
   skillsContainer.innerHTML = '';
-  data.skills.forEach((skill, index) => {
-    const colorClass = `color-${(index % 9) + 1}`; // 9 different colors
-    const skillItem = document.createElement('div');
-    skillItem.className = 'skill-item';
-    skillItem.innerHTML = `
-            <div class="skill-name">${skill.name}</div>
-            <div class="skill-tagline ${colorClass}">${skill.tagline || ''}</div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%" data-width="${skill.level}"></div>
-            </div>
-        `;
-    skillsContainer.appendChild(skillItem);
+
+  data.skills.forEach((category, catIndex) => {
+    const categorySection = document.createElement('div');
+    categorySection.className = 'skill-category';
+
+    const categoryTitle = document.createElement('h4');
+    categoryTitle.className = 'skill-category-title';
+    categoryTitle.textContent = category.category;
+    categorySection.appendChild(categoryTitle);
+
+    const categorySkills = document.createElement('div');
+    categorySkills.className = 'category-skills';
+
+    category.items.forEach((skill, skillIndex) => {
+      const colorClass = `color-${((catIndex + skillIndex) % 9) + 1}`; // 9 different colors
+      const skillItem = document.createElement('div');
+      skillItem.className = 'skill-item';
+      skillItem.innerHTML = `
+        <div class="skill-name">${skill.name}</div>
+        <div class="skill-tagline ${colorClass}">${skill.tagline || ''}</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 0%" data-width="${skill.level}"></div>
+        </div>
+      `;
+      categorySkills.appendChild(skillItem);
+    });
+
+    categorySection.appendChild(categorySkills);
+    skillsContainer.appendChild(categorySection);
   });
 
   // Load projects (using testimonials as projects)
@@ -151,6 +181,32 @@ function loadPortfolio(data) {
             <p>${exp.description}</p>
         `;
     experienceContainer.appendChild(timelineItem);
+  });
+
+  // Load achievements
+  const achievementsContainer = document.getElementById('achievements-container');
+  achievementsContainer.innerHTML = '';
+  data.achievements.forEach(achievement => {
+    const achievementCard = document.createElement('div');
+    achievementCard.className = 'achievement-card';
+
+    // Use image if available, otherwise use icon
+    let iconHTML = '';
+    if (achievement.image) {
+      iconHTML = `<img src="${achievement.image}" alt="${achievement.title}" class="achievement-image">`;
+    } else if (achievement.icon) {
+      iconHTML = `<div class="achievement-icon"><i class="${achievement.icon}"></i></div>`;
+    }
+
+    achievementCard.innerHTML = `
+            <div class="achievement-header">
+                ${iconHTML}
+                <h3 class="achievement-title">${achievement.title}</h3>
+            </div>
+            <span class="achievement-date">${achievement.date}</span>
+            <p class="achievement-description">${achievement.description}</p>
+        `;
+    achievementsContainer.appendChild(achievementCard);
   });
 
   // Load clients section

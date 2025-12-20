@@ -44,8 +44,8 @@
     "github": "https://github.com/ram7767"
   },
   "about": {
-    "intro": "Innovative and driven Computer Science fresher with a passion for turning creative ideas into functional solutions. Eager to embark on a rewarding journey in iOS app development, I bring a strong foundation in app development and data analysis to the table. My dedication to continuous learning, problem-solving mindset, and commitment to excellence set the stage for my success in the dynamic field of mobile application development.",
-    "details": "I have a proven track record of participating in hackathons and coding competitions, where I showcased my ability to think creatively and develop solutions under tight deadlines. This experience has honed my ability to work effectively in a fast-paced and collaborative environment."
+    "intro": "Results-driven Mobile Application Developer with 3+ years of hands-on experience in designing, developing, and deploying high-quality iOS and cross-platform mobile applications. Specialized in Swift, SwiftUI, UIKit, and Flutter, with a strong foundation in building scalable, secure, and performance-optimized solutions that deliver excellent user experiences.",
+    "details": "Experienced in the complete mobile application lifecycle, from requirement analysis and architecture design to development, testing, deployment, and post-release support. Proficient in REST API integration, real-time communication using sockets, push notifications (APNS/FCM), payments, and backend collaboration across multiple platforms. Strong advocate of clean architecture, accessibility-first development, and performance optimization. Demonstrated leadership in leading Flutter initiatives, mentoring junior developers, conducting code reviews, and collaborating effectively with product managers, designers, and backend teams in Agile environments."
   },
   "services": [
     {
@@ -69,16 +69,6 @@
       "institution": "Rajeev Gandhi Memorial College Of Engineering & Technology",
       "years": "2020 - 2023",
       "degree": "Computer Science & Information Technology"
-    },
-    {
-      "institution": "GMR Polytechnic College",
-      "years": "2017 - 2020",
-      "degree": "Electrical and Electronics Engineering"
-    },
-    {
-      "institution": "Gitanjali E.M Grammar High School",
-      "years": "2016 - 2017",
-      "degree": "Secondary Board Education A.P."
     }
   ],
   "experience": [
@@ -99,59 +89,294 @@
   ],
   "skills": [
     {
-      "name": "Swift",
-      "level": "95",
-      "tagline": "Native iOS performance"
+      "category": "Languages & Frameworks",
+      "items": [
+        {
+          "name": "Swift",
+          "level": "95",
+          "tagline": "Native iOS performance"
+        },
+        {
+          "name": "SwiftUI",
+          "level": "85",
+          "tagline": "Modern declarative UI"
+        },
+        {
+          "name": "UIKit",
+          "level": "90",
+          "tagline": "Traditional iOS interface"
+        },
+        {
+          "name": "Flutter",
+          "level": "95",
+          "tagline": "Cross-platform efficiency"
+        },
+        {
+          "name": "Flutter (Bridging)",
+          "level": "85",
+          "tagline": "Native integration"
+        },
+        {
+          "name": "Combine",
+          "level": "80",
+          "tagline": "Reactive programming"
+        },
+        {
+          "name": "Kotlin",
+          "level": "90",
+          "tagline": "Android development"
+        },
+        {
+          "name": "Python",
+          "level": "95",
+          "tagline": "Automation & AI"
+        },
+        {
+          "name": "Django",
+          "level": "90",
+          "tagline": "Python web framework"
+        },
+        {
+          "name": ".NET",
+          "level": "80",
+          "tagline": "Backend development"
+        }
+      ]
     },
     {
-      "name": "Flutter",
-      "level": "95",
-      "tagline": "Cross-platform efficiency"
+      "category": "Architectures",
+      "items": [
+        {
+          "name": "MVC",
+          "level": "90",
+          "tagline": "Model-View-Controller"
+        },
+        {
+          "name": "MVVM",
+          "level": "95",
+          "tagline": "Model-View-ViewModel"
+        },
+        {
+          "name": "MVP",
+          "level": "85",
+          "tagline": "Model-View-Presenter"
+        },
+        {
+          "name": "VIPER",
+          "level": "75",
+          "tagline": "Clean architecture pattern"
+        }
+      ]
     },
     {
-      "name": "Swift-UI",
-      "level": "80",
-      "tagline": "Modern UI design"
+      "category": "Concurrency",
+      "items": [
+        {
+          "name": "Grand Central Dispatch (GCD)",
+          "level": "90",
+          "tagline": "Thread management"
+        },
+        {
+          "name": "Operation Queues",
+          "level": "85",
+          "tagline": "Task-based concurrency"
+        }
+      ]
     },
     {
-      "name": "Kotlin",
-      "level": "90",
-      "tagline": "Android development"
+      "category": "Databases & Cloud",
+      "items": [
+        {
+          "name": "Core Data",
+          "level": "85",
+          "tagline": "Apple's persistence framework"
+        },
+        {
+          "name": "Swift Data",
+          "level": "70",
+          "tagline": "New data persistence"
+        },
+        {
+          "name": "Realm",
+          "level": "80",
+          "tagline": "Mobile database"
+        },
+        {
+          "name": "Firebase Firestore",
+          "level": "95",
+          "tagline": "NoSQL cloud database"
+        },
+        {
+          "name": "Firebase Realtime Database",
+          "level": "90",
+          "tagline": "Real-time data sync"
+        }
+      ]
     },
     {
-      "name": "Android Development",
-      "level": "90",
-      "tagline": "Native mobile apps"
+      "category": "Backend Integration",
+      "items": [
+        {
+          "name": ".NET",
+          "level": "80",
+          "tagline": "Backend development"
+        },
+        {
+          "name": "Python",
+          "level": "95",
+          "tagline": "Web service automation"
+        },
+        {
+          "name": "Django",
+          "level": "90",
+          "tagline": "Web framework"
+        },
+        {
+          "name": "Firebase",
+          "level": "95",
+          "tagline": "Backend as a Service"
+        }
+      ]
     },
     {
-      "name": "Python",
-      "level": "95",
-      "tagline": "Automation & AI"
+      "category": "APIs & Networking",
+      "items": [
+        {
+          "name": "RESTful APIs",
+          "level": "95",
+          "tagline": "Web service integration"
+        },
+        {
+          "name": "WebSockets",
+          "level": "85",
+          "tagline": "Real-time bidirectional comm"
+        },
+        {
+          "name": "Git/GitHub",
+          "level": "95",
+          "tagline": "Version control systems"
+        },
+        {
+          "name": "Version Control Workflows",
+          "level": "90",
+          "tagline": "Collaborative development"
+        }
+      ]
     },
     {
-      "name": "Firebase",
-      "level": "95",
-      "tagline": "Real-time backend"
+      "category": "Mobile UI/UX",
+      "items": [
+        {
+          "name": "App Performance Optimization",
+          "level": "90",
+          "tagline": "Speed & efficiency"
+        },
+        {
+          "name": "Accessibility Features",
+          "level": "85",
+          "tagline": "Inclusive design"
+        },
+        {
+          "name": "App Store Publishing",
+          "level": "90",
+          "tagline": "Distribution & compliance"
+        }
+      ]
     },
     {
-      "name": "Cross-Platform App Development",
-      "level": "95",
-      "tagline": "Efficient deployment"
+      "category": "Testing",
+      "items": [
+        {
+          "name": "SonarQube",
+          "level": "80",
+          "tagline": "Code quality analysis"
+        },
+        {
+          "name": "SwiftLint",
+          "level": "85",
+          "tagline": "Code style enforcement"
+        },
+        {
+          "name": "Unit & UI Testing",
+          "level": "90",
+          "tagline": "Quality assurance"
+        },
+        {
+          "name": "Code Review",
+          "level": "95",
+          "tagline": "Peer collaboration"
+        }
+      ]
     },
     {
-      "name": "Web Development (Django, Flask API)",
-      "level": "70",
-      "tagline": "Full-stack web"
+      "category": "DevOps",
+      "items": [
+        {
+          "name": "CI/CD Pipelines",
+          "level": "85",
+          "tagline": "Automated deployment"
+        },
+        {
+          "name": "Agile Practices",
+          "level": "90",
+          "tagline": "Project methodology"
+        }
+      ]
     },
     {
-      "name": "Version Control",
-      "level": "80",
-      "tagline": "Collaborative coding"
+      "category": "Version Control",
+      "items": [
+        {
+          "name": "GitHub",
+          "level": "95",
+          "tagline": "Repository hosting"
+        },
+        {
+          "name": "GitLab",
+          "level": "85",
+          "tagline": "DevOps platform"
+        }
+      ]
     },
     {
-      "name": "Operating System",
-      "level": "80",
-      "tagline": "System optimization"
+      "category": "Project Management",
+      "items": [
+        {
+          "name": "Jira",
+          "level": "85",
+          "tagline": "Issue tracking"
+        },
+        {
+          "name": "Trello",
+          "level": "80",
+          "tagline": "Task management"
+        },
+        {
+          "name": "ClickUp",
+          "level": "75",
+          "tagline": "Productivity platform"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "name": "Stripe",
+          "level": "85",
+          "tagline": "Payment processing"
+        },
+        {
+          "name": "Apple Pay",
+          "level": "90",
+          "tagline": "Mobile payments"
+        },
+        {
+          "name": "Google Pay",
+          "level": "85",
+          "tagline": "Digital wallet"
+        }
+      ]
     }
   ],
   "testimonials": [
@@ -242,7 +467,7 @@
     },
     {
       "title": "Team Leadership",
-      "date": "2023-Present",
+      "date": "2024-Present",
       "icon": "fas fa-users-cog",
       "image": "./assets/images/icon-app.svg",
       "description": "Led development teams in implementing agile methodologies, improving delivery speed and code quality across multiple projects."

@@ -32,11 +32,12 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(255, 255, 255, 0.15);
   padding: 1.2rem 2rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: none;
   z-index: 1000;
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav .container {
@@ -63,16 +64,21 @@ nav .container {
 }
 
 #resume-btn {
-  background: var(--primary-color);
+  background: rgba(255, 255, 255, 0.2);
   color: white;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
-  transition: opacity 0.3s;
+  transition: all 0.3s;
   text-decoration: none;
   font-size: 0.9rem;
+}
+
+#resume-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Mobile menu - hidden by default */
@@ -103,7 +109,7 @@ nav .container {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: white;
 }
 
 .mobile-only {
@@ -139,13 +145,13 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--text-color);
+  color: white;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .hero {
@@ -300,35 +306,177 @@ section {
 }
 
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
+  display: block;
 }
 
-.about-text h3 {
-  font-size: 2rem;
+.about-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-subsection {
+  margin-bottom: 1.5rem;
+}
+
+.subsection-title {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--accent-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
 }
 
-.about-text p {
+.about-subsection p {
   margin-bottom: 1rem;
   font-size: 1.1rem;
   color: var(--text-light);
+  line-height: 1.7;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-white);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.education-item .years {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.education-item .degree {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+.skills {
+  background: white;
 }
 
 .skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skill-category {
+  margin-bottom: 1.5rem;
+}
+
+.skill-category:last-child {
+  margin-bottom: 0;
+}
+
+.skill-category-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--bg-light);
+}
+
+.category-skills {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
-.skill-item {
+.achievements {
+  background: var(--bg-light);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.achievement-card {
   background: var(--bg-white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 1.5rem;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.achievement-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.achievement-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.achievement-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+
+.achievement-title {
+  font-size: 1.3rem;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.achievement-date {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.achievement-description {
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.skill-item {
+  background: var(--bg-light);
   padding: 1rem;
   border-radius: 10px;
   box-shadow: var(--shadow-sm);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .clients-grid {

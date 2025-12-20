@@ -17,8 +17,10 @@
       <ul class="nav-menu desktop-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-buttons">
@@ -34,8 +36,10 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <button id="resume-btn-mobile" class="btn btn-primary">Resume</button>
@@ -87,13 +91,30 @@
     <div class="container">
       <h2 class="section-title">About Me</h2>
       <div class="about-content">
-        <div class="about-text">
-          <h3 id="about-title">Loading...</h3>
-          <p id="about-desc">Loading...</p>
-          <p id="about-passion">Loading...</p>
+        <div class="about-sections">
+          <div class="about-subsection">
+            <h3 class="subsection-title">Background</h3>
+            <p id="about-background">Loading...</p>
+          </div>
+          <div class="about-subsection">
+            <h3 class="subsection-title">Education</h3>
+            <div id="about-education-list">
+              <!-- Education items will be loaded here -->
+            </div>
+          </div>
+          <div class="about-subsection">
+            <h3 class="subsection-title">Approach</h3>
+            <p id="about-approach">Loading...</p>
+          </div>
         </div>
-        <div class="skills-grid" id="skills-container"></div>
       </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid" id="skills-container"></div>
     </div>
   </section>
 
@@ -115,6 +136,13 @@
     <div class="container">
       <h2 class="section-title">Work Experience</h2>
       <div class="timeline" id="experience-container"></div>
+    </div>
+  </section>
+
+  <section class="achievements" id="achievements">
+    <div class="container">
+      <h2 class="section-title">Achievements & Certificates</h2>
+      <div class="achievements-grid" id="achievements-container"></div>
     </div>
   </section>
 

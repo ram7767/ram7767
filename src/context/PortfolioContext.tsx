@@ -27,7 +27,8 @@ export const PortfolioProvider: React.FC<PortfolioProviderProps> = ({ children }
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data/portfolioData.json');
+        // Use relative path for GitHub Pages compatibility
+        const response = await fetch('./data/portfolioData.json');
         if (!response.ok) {
           throw new Error('Failed to fetch portfolio data');
         }

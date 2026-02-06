@@ -1,0 +1,470 @@
+{
+  "theme": {
+    "primaryBg": "#0a192f",
+    "secondaryBg": "#112240",
+    "cardBg": "#172a46",
+    "accentPurple": "#8b5cf6",
+    "accentLightPurple": "#a78bfa",
+    "textPrimary": "#8b5cf6",
+    "textSecondary": "#8892b0",
+    "highlight": "#64ffda"
+  },
+  "name": "Ratnakaram Rama Narasimha Raju",
+  "shortName": "Ram",
+  "title": "Mobile Application Developer",
+  "greeting": "Hi, I'm",
+  "tagline": "Crafting exceptional mobile experiences with Swift, SwiftUI and Flutter",
+  "profilePic": "./assets/images/ram_profile_pic.jpg",
+  "email": "rramanarasimharaju@gmail.com",
+  "location": "Bengaluru, India",
+  "stats": {
+    "appLaunches": "20+",
+    "performanceImprovement": "40% avg",
+    "bugReduction": "95% avg",
+    "userSatisfaction": "4.9/5"
+  },
+  "featuredApp": {
+    "name": "HealthPass (HSBC)",
+    "tagline": "Your secure health companion",
+    "icon": "fas fa-heartbeat",
+    "rating": "4.9",
+    "downloads": "500K+",
+    "activeUsers": "200K+",
+    "tags": [
+      "Cross-Platform",
+      "iOS",
+      "Health Tracking",
+      "Security",
+      "Enterprise"
+    ],
+    "description": "Developed key features for HSBC's health tracking application, integrated Deeplinks, and added comprehensive UI & Unit test cases."
+  },
+  "socialLinks": {
+    "linkedin": "https://www.linkedin.com/in/ratnakaram-rama-narasimha-raju-535469197/",
+    "github": "https://github.com/ram7767"
+  },
+  "about": {
+    "intro": "Results-driven Mobile Application Developer with 3+ years of hands-on experience in designing, developing, and deploying high-quality iOS and cross-platform mobile applications. Specialized in Swift, SwiftUI, UIKit, and Flutter, with a strong foundation in building scalable, secure, and performance-optimized solutions that deliver excellent user experiences.",
+    "details": "Experienced in the complete mobile application lifecycle, from requirement analysis and architecture design to development, testing, deployment, and post-release support. Proficient in REST API integration, real-time communication using sockets, push notifications (APNS/FCM), payments, and backend collaboration across multiple platforms. Strong advocate of clean architecture, accessibility-first development, and performance optimization. Demonstrated leadership in leading Flutter initiatives, mentoring junior developers, conducting code reviews, and collaborating effectively with product managers, designers, and backend teams in Agile environments."
+  },
+  "services": [
+    {
+      "title": "iOS App Development",
+      "description": "The most modern and high-quality design made at a professional level.",
+      "icon": "smartphone"
+    },
+    {
+      "title": "Flutter App Development",
+      "description": "The robust and fast deployment across platforms like Android and iOS.",
+      "icon": "layers"
+    },
+    {
+      "title": "Android App Development",
+      "description": "Native Android applications with modern Kotlin and Java implementation.",
+      "icon": "tablet"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Rajeev Gandhi Memorial College Of Engineering & Technology",
+      "years": "2020 - 2023",
+      "degree": "Computer Science & Information Technology"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Mobile App Developer",
+      "subtitle": "Flutter & iOS App Developer",
+      "years": "2024 — Present",
+      "company": "SoftSuave Technology",
+      "description": "Leading Flutter and iOS app development, architecting scalable features, mentoring junior developers, and driving end-to-end delivery from design to App Store release."
+    },
+    {
+      "position": "Software Engineer",
+      "subtitle": "iOS App Developer",
+      "years": "2023 — 2024",
+      "company": "SoftSuave Technology",
+      "description": "Developed and maintained iOS applications using Swift, integrated REST APIs, optimized performance, and collaborated with cross-functional teams to deliver high-quality mobile solutions."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages & Frameworks",
+      "items": [
+        {
+          "name": "Swift",
+          "level": "95",
+          "tagline": "Native iOS performance"
+        },
+        {
+          "name": "SwiftUI",
+          "level": "85",
+          "tagline": "Modern declarative UI"
+        },
+        {
+          "name": "UIKit",
+          "level": "90",
+          "tagline": "Traditional iOS interface"
+        },
+        {
+          "name": "Flutter",
+          "level": "95",
+          "tagline": "Cross-platform efficiency"
+        },
+        {
+          "name": "Flutter (Bridging)",
+          "level": "85",
+          "tagline": "Native integration"
+        },
+        {
+          "name": "Combine",
+          "level": "80",
+          "tagline": "Reactive programming"
+        },
+        {
+          "name": "Kotlin",
+          "level": "90",
+          "tagline": "Android development"
+        },
+        {
+          "name": "Python",
+          "level": "95",
+          "tagline": "Automation & AI"
+        },
+        {
+          "name": "Django",
+          "level": "90",
+          "tagline": "Python web framework"
+        },
+        {
+          "name": ".NET",
+          "level": "80",
+          "tagline": "Backend development"
+        }
+      ]
+    },
+    {
+      "category": "Architectures",
+      "items": [
+        {
+          "name": "MVC",
+          "level": "90",
+          "tagline": "Model-View-Controller"
+        },
+        {
+          "name": "MVVM",
+          "level": "95",
+          "tagline": "Model-View-ViewModel"
+        },
+        {
+          "name": "MVP",
+          "level": "85",
+          "tagline": "Model-View-Presenter"
+        },
+        {
+          "name": "VIPER",
+          "level": "75",
+          "tagline": "Clean architecture pattern"
+        }
+      ]
+    },
+    {
+      "category": "Concurrency",
+      "items": [
+        {
+          "name": "Grand Central Dispatch (GCD)",
+          "level": "90",
+          "tagline": "Thread management"
+        },
+        {
+          "name": "Operation Queues",
+          "level": "85",
+          "tagline": "Task-based concurrency"
+        }
+      ]
+    },
+    {
+      "category": "Databases & Cloud",
+      "items": [
+        {
+          "name": "Core Data",
+          "level": "85",
+          "tagline": "Apple's persistence framework"
+        },
+        {
+          "name": "Swift Data",
+          "level": "70",
+          "tagline": "New data persistence"
+        },
+        {
+          "name": "Realm",
+          "level": "80",
+          "tagline": "Mobile database"
+        },
+        {
+          "name": "Firebase Firestore",
+          "level": "95",
+          "tagline": "NoSQL cloud database"
+        },
+        {
+          "name": "Firebase Realtime Database",
+          "level": "90",
+          "tagline": "Real-time data sync"
+        }
+      ]
+    },
+    {
+      "category": "Backend Integration",
+      "items": [
+        {
+          "name": ".NET",
+          "level": "80",
+          "tagline": "Backend development"
+        },
+        {
+          "name": "Python",
+          "level": "95",
+          "tagline": "Web service automation"
+        },
+        {
+          "name": "Django",
+          "level": "90",
+          "tagline": "Web framework"
+        },
+        {
+          "name": "Firebase",
+          "level": "95",
+          "tagline": "Backend as a Service"
+        }
+      ]
+    },
+    {
+      "category": "APIs & Networking",
+      "items": [
+        {
+          "name": "RESTful APIs",
+          "level": "95",
+          "tagline": "Web service integration"
+        },
+        {
+          "name": "WebSockets",
+          "level": "85",
+          "tagline": "Real-time bidirectional comm"
+        },
+        {
+          "name": "Git/GitHub",
+          "level": "95",
+          "tagline": "Version control systems"
+        },
+        {
+          "name": "Version Control Workflows",
+          "level": "90",
+          "tagline": "Collaborative development"
+        }
+      ]
+    },
+    {
+      "category": "Mobile UI/UX",
+      "items": [
+        {
+          "name": "App Performance Optimization",
+          "level": "90",
+          "tagline": "Speed & efficiency"
+        },
+        {
+          "name": "Accessibility Features",
+          "level": "85",
+          "tagline": "Inclusive design"
+        },
+        {
+          "name": "App Store Publishing",
+          "level": "90",
+          "tagline": "Distribution & compliance"
+        }
+      ]
+    },
+    {
+      "category": "Testing",
+      "items": [
+        {
+          "name": "SonarQube",
+          "level": "80",
+          "tagline": "Code quality analysis"
+        },
+        {
+          "name": "SwiftLint",
+          "level": "85",
+          "tagline": "Code style enforcement"
+        },
+        {
+          "name": "Unit & UI Testing",
+          "level": "90",
+          "tagline": "Quality assurance"
+        },
+        {
+          "name": "Code Review",
+          "level": "95",
+          "tagline": "Peer collaboration"
+        }
+      ]
+    },
+    {
+      "category": "DevOps",
+      "items": [
+        {
+          "name": "CI/CD Pipelines",
+          "level": "85",
+          "tagline": "Automated deployment"
+        },
+        {
+          "name": "Agile Practices",
+          "level": "90",
+          "tagline": "Project methodology"
+        }
+      ]
+    },
+    {
+      "category": "Version Control",
+      "items": [
+        {
+          "name": "GitHub",
+          "level": "95",
+          "tagline": "Repository hosting"
+        },
+        {
+          "name": "GitLab",
+          "level": "85",
+          "tagline": "DevOps platform"
+        }
+      ]
+    },
+    {
+      "category": "Project Management",
+      "items": [
+        {
+          "name": "Jira",
+          "level": "85",
+          "tagline": "Issue tracking"
+        },
+        {
+          "name": "Trello",
+          "level": "80",
+          "tagline": "Task management"
+        },
+        {
+          "name": "ClickUp",
+          "level": "75",
+          "tagline": "Productivity platform"
+        }
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        {
+          "name": "Stripe",
+          "level": "85",
+          "tagline": "Payment processing"
+        },
+        {
+          "name": "Apple Pay",
+          "level": "90",
+          "tagline": "Mobile payments"
+        },
+        {
+          "name": "Google Pay",
+          "level": "85",
+          "tagline": "Digital wallet"
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "HealthPass (HSBC)",
+      "role": "iOS Dev",
+      "image": "./assets/images/hsbc.png",
+      "review": "Worked as an iOS Developer. Developed key features, integrated Deeplinks, and added UI & Unit test cases.",
+      "appLink": "https://www.hsbc.com.hk/healthpass/"
+    },
+    {
+      "name": "SmartWait",
+      "role": "iOS Dev",
+      "image": "./assets/images/smartwait.png",
+      "review": "Worked as an iOS Developer. Implemented real-time queue management, improved user experience, and handled API integrations.",
+      "appLink": "https://apps.apple.com/in/app/milagro-smartwait/id1465908192#information"
+    },
+    {
+      "name": "Playdate",
+      "role": "iOS Dev",
+      "image": "./assets/images/playdate.png",
+      "review": "Worked as an iOS Developer. Designed social engagement features, managed push notifications, and enhanced UI/UX.",
+      "appLink": "https://apps.apple.com/in/app/playdate-secure-family-chat/id1592518146"
+    },
+    {
+      "name": "MRC",
+      "role": "iOS Dev",
+      "image": "./assets/images/mrc.png",
+      "review": "Worked as an iOS Developer. Led the development of a secure messaging module, integrated third-party APIs, and ensured app stability.",
+      "appLink": "https://example.com/mrc"
+    },
+    {
+      "name": "PaySlate",
+      "role": "Flutter Dev",
+      "image": "./assets/images/payslate.png",
+      "review": "Worked as a Flutter Developer. Built a cross-platform payment solution, implemented state management, and implemented the book sharing feature.",
+      "appLink": "https://apps.apple.com/in/app/payslate/id6737227735"
+    }
+  ],
+  "clients": [
+    {
+      "logo": "./assets/images/hsbc.png",
+      "company_name": "HSBC",
+      "reference": "https://www.hsbc.com.hk/healthpass/"
+    },
+    {
+      "logo": "./assets/images/capgemini.svg",
+      "company_name": "Capgemini",
+      "reference": "#"
+    },
+    {
+      "logo": "./assets/images/softsuave.png",
+      "company_name": "Soft Suave",
+      "reference": "https://www.softsuave.com/"
+    },
+    {
+      "logo": "./assets/images/dotmite.png",
+      "company_name": "Dotmite",
+      "reference": "https://apps.apple.com/in/app/payslate/id6737227735"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Best Hire Award",
+      "date": "October 2024",
+      "icon": "trophy",
+      "description": "Honored with the Best Hire Award for exceptional performance, adoption of new technologies, successful management of multiple projects, and fostering a collaborative team environment."
+    },
+    {
+      "title": "iOS Development Excellence",
+      "date": "2023-Present",
+      "icon": "apple",
+      "description": "Demonstrated expertise in iOS app development using Swift and SwiftUI, delivering high-quality applications with exceptional user experiences."
+    },
+    {
+      "title": "Cross-Platform Specialist",
+      "date": "2022-Present",
+      "icon": "git-branch",
+      "description": "Successfully developed and deployed cross-platform applications using Flutter and React Native, reaching millions of users worldwide."
+    },
+    {
+      "title": "Team Leadership",
+      "date": "2024-Present",
+      "icon": "users",
+      "description": "Led development teams in implementing agile methodologies, improving delivery speed and code quality across multiple projects."
+    }
+  ],
+  "resumeFile": "./assets/resume/Ram_Resume.pdf",
+  "favicon": "./assets/images/ramIcon.ico",
+  "githubUsername": "ram7767"
+}

@@ -1,172 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobile Developer Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="./assets/images/ramIcon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<body>
-  <nav>
-    <div class="container">
-      <div class="logo" id="nav-logo"><i class="fas fa-user"></i> <span id="short-name-text">Portfolio</span></div>
-      <ul class="nav-menu desktop-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-buttons">
-        <button id="resume-btn" class="btn btn-primary">Resume</button>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <!-- Mobile menu -->
-      <div class="mobile-menu" id="mobile-menu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="resume-btn-mobile" class="btn btn-primary">Resume</button>
-      </div>
-    </div>
-  </nav>
-
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-content">
-        <h1 id="hero-name">Loading...</h1>
-        <h2 id="hero-title">Loading...</h2>
-        <p id="hero-bio">Loading...</p>
-        <div class="stats-container">
-          <div class="stat-item">
-            <div class="stat-icon"><i class="fas fa-rocket" id="app-launches-icon"></i></div>
-            <div class="stat-number" id="app-launches">0</div>
-            <div class="stat-label">App Launches</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-icon"><i class="fas fa-bolt" id="performance-improvement-icon"></i></div>
-            <div class="stat-number" id="performance-improvement">0</div>
-            <div class="stat-label">Performance Improvement</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-icon"><i class="fas fa-bug-slash" id="bug-reduction-icon"></i></div>
-            <div class="stat-number" id="bug-reduction">0</div>
-            <div class="stat-label">Bug Reduction</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-icon"><i class="fas fa-star" id="user-satisfaction-icon"></i></div>
-            <div class="stat-number" id="user-satisfaction">0</div>
-            <div class="stat-label">User Satisfaction</div>
-          </div>
-        </div>
-        <div class="cta-buttons">
-          <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <a href="#projects" class="btn btn-secondary">View Work</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img id="hero-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
-          alt="Profile">
-      </div>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <div class="about-sections">
-          <div class="about-subsection">
-            <h3 class="subsection-title">Background</h3>
-            <p id="about-background">Loading...</p>
-          </div>
-          <div class="about-subsection">
-            <h3 class="subsection-title">Education</h3>
-            <div id="about-education-list">
-              <!-- Education items will be loaded here -->
-            </div>
-          </div>
-          <div class="about-subsection">
-            <h3 class="subsection-title">Approach</h3>
-            <p id="about-approach">Loading...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="skills" id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills & Expertise</h2>
-      <div class="skills-grid" id="skills-container"></div>
-    </div>
-  </section>
-
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid" id="projects-container"></div>
-    </div>
-  </section>
-
-  <section class="clients" id="clients">
-    <div class="container">
-      <h2 class="section-title">Clients</h2>
-      <div class="clients-grid" id="clients-container"></div>
-    </div>
-  </section>
-
-  <section class="experience" id="experience">
-    <div class="container">
-      <h2 class="section-title">Work Experience</h2>
-      <div class="timeline" id="experience-container"></div>
-    </div>
-  </section>
-
-  <section class="achievements" id="achievements">
-    <div class="container">
-      <h2 class="section-title">Achievements & Certificates</h2>
-      <div class="achievements-grid" id="achievements-container"></div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <div class="contact-content">
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-        <div class="contact-info" id="contact-info"></div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="social-links" id="social-links"></div>
-    <p id="footer-text">Loading...</p>
-  </footer>
-
-  <script src="./assets/js/script.js"></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a192f" />
+    <meta name="msapplication-TileColor" content="#0a192f" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Ram Raju - Mobile Application Developer specializing in iOS and Flutter development. 3+ years of experience crafting exceptional mobile experiences." />
+    <meta name="keywords" content="iOS Developer, Flutter Developer, Mobile App Developer, Swift, SwiftUI, React Native, Bangalore, India" />
+    <meta name="author" content="Ram Raju" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ram Raju - iOS & Flutter Developer Portfolio" />
+    <meta property="og:description" content="Mobile Application Developer with 3+ years of experience in iOS and cross-platform development. View my projects and skills." />
+    <meta property="og:image" content="/assets/images/ram_profile_pic.jpg" />
+    <meta property="og:url" content="https://ramraju.dev" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ram Raju - iOS & Flutter Developer" />
+    <meta name="twitter:description" content="Mobile Application Developer specializing in iOS and Flutter development." />
+    <meta name="twitter:image" content="/assets/images/ram_profile_pic.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/ramIcon.ico" />
+    <link rel="apple-touch-icon" href="/assets/images/ramIcon.ico" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Title -->
+    <title>Ram Raju - iOS & Flutter Developer | Mobile App Developer Portfolio</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ratnakaram Rama Narasimha Raju",
+      "alternateName": "Ram Raju",
+      "jobTitle": "Mobile Application Developer",
+      "url": "https://ramraju.dev",
+      "email": "rramanarasimharaju@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bengaluru",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/ratnakaram-rama-narasimha-raju-535469197/",
+        "https://github.com/ram7767"
+      ],
+      "knowsAbout": ["iOS Development", "Flutter", "Swift", "SwiftUI", "Mobile App Development"]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

@@ -423,7 +423,7 @@
       "reference": "https://www.hsbc.com.hk/healthpass/"
     },
     {
-      "logo": "./assets/images/capgemini.svg",
+      "logo": "./assets/images/CAP.PA.svg",
       "company_name": "Capgemini",
       "reference": "#"
     },
@@ -465,6 +465,5 @@
     }
   ],
   "resumeFile": "./assets/resume/Ram_Resume.pdf",
-  "favicon": "./assets/images/ramIcon.ico",
-  "githubUsername": "ram7767"
+  "favicon": "./assets/images/ramIcon.ico"
 }

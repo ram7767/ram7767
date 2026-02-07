@@ -9,9 +9,8 @@ const Navigation: React.FC = () => {
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
-    { label: 'Experience', href: '#experience' },
+    { label: 'Services', href: '#services' },
     { label: 'Projects', href: '#projects' },
-    { label: 'GitHub', href: '#github' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -35,11 +34,10 @@ const Navigation: React.FC = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-[#0a192f]/95 backdrop-blur-md shadow-lg'
-            : 'bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
+          ? 'bg-[#0a192f]/95 backdrop-blur-md shadow-lg'
+          : 'bg-transparent'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -53,11 +51,11 @@ const Navigation: React.FC = () => {
               className="flex items-center gap-2 group"
             >
               <div className="relative">
-                <Code2 className="w-8 h-8 text-[#8b5cf6] transition-transform group-hover:scale-110" />
-                <div className="absolute inset-0 bg-[#8b5cf6]/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
+                <Code2 className="w-8 h-8 text-system-blue transition-transform group-hover:scale-110" />
+                <div className="absolute inset-0 bg-system-blue/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
-              <span className="text-xl font-bold text-white">
-                <span className="text-[#8b5cf6]">Ram</span>Raju
+              <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-system-blue to-system-orange">
+                Ram Raju
               </span>
             </a>
 
@@ -71,10 +69,10 @@ const Navigation: React.FC = () => {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                  className="relative px-4 py-2 text-sm text-[#8892b0] hover:text-[#8b5cf6] transition-colors group"
+                  className="relative px-4 py-2 text-sm text-[#8892b0] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-system-blue hover:to-system-orange transition-colors group"
                 >
                   {item.label}
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#8b5cf6] transition-all group-hover:w-1/2" />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-system-blue transition-all group-hover:w-1/2" />
                 </a>
               ))}
             </div>
@@ -93,18 +91,16 @@ const Navigation: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-30 md:hidden transition-all duration-300 ${
-          isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}
+        className={`fixed inset-0 z-30 md:hidden transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+          }`}
       >
         <div
           className="absolute inset-0 bg-black/50 backdrop-blur-sm"
           onClick={() => setIsMobileMenuOpen(false)}
         />
         <div
-          className={`absolute top-16 left-0 right-0 bg-[#112240] border-b border-[#8b5cf6]/20 transition-transform duration-300 ${
-            isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
-          }`}
+          className={`absolute top-16 left-0 right-0 bg-[#112240] border-b border-[#8b5cf6]/20 transition-transform duration-300 ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
+            }`}
         >
           <div className="px-4 py-4 space-y-1">
             {navItems.map((item) => (
@@ -115,7 +111,7 @@ const Navigation: React.FC = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="block px-4 py-3 text-[#8892b0] hover:text-[#8b5cf6] hover:bg-[#8b5cf6]/10 rounded-lg transition-all"
+                className="block px-4 py-3 text-[#8892b0] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-system-blue hover:to-system-orange hover:bg-[#8b5cf6]/10 rounded-lg transition-all"
               >
                 {item.label}
               </a>

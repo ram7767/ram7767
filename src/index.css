@@ -1,75 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    /* OKLCH Color Space - System Blue & Orange Theme */
+    --primary: oklch(60% 0.2 250);
+    --primary-glow: oklch(60% 0.2 250 / 0.4);
+    --secondary: oklch(65% 0.2 40);
+    --secondary-glow: oklch(65% 0.2 40 / 0.4);
+    --tertiary: oklch(70% 0.15 180);
+    --tertiary-glow: oklch(70% 0.15 180 / 0.4);
+
+    /* Surface Colors */
+    --surface-dark: oklch(12% 0.02 260);
+    --surface-void: oklch(8% 0.01 270);
+    --surface-glass: oklch(70% 0.02 280 / 0.05);
+    --surface-glass-elevated: oklch(70% 0.02 280 / 0.08);
+
+    /* Text Colors */
+    --text-primary: oklch(98% 0 0);
+    --text-secondary: oklch(80% 0.02 280);
+    --text-muted: oklch(60% 0.02 280);
+
+    /* Glassmorphism */
+    --glass-blur: blur(20px) saturate(180%);
+    --glass-blur-heavy: blur(40px) saturate(200%);
+    --glass-border: 1px solid oklch(100% 0 0 / 0.1);
+    --glass-shadow: 0 8px 32px 0 oklch(0% 0 0 / 0.37);
+    --glass-shadow-colored: 0 8px 32px 0 oklch(64% 0.22 278 / 0.2);
+
+    /* Shadcn overrides */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+    --primary-hsl: 250 60% 60%;
+    --primary-foreground: 0 0% 0%;
+    --secondary-hsl: 40 60% 62%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
-    --radius: 0.625rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 250 60% 60%;
+    --radius: 0.75rem;
   }
 
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(180deg, var(--surface-void) 0%, var(--surface-dark) 100%);
+    background-attachment: fixed;
+    color: var(--text-primary);
+  }
+
+  ::selection {
+    background: var(--primary);
+    color: black;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: linear-gradient(135deg, oklch(100% 0 0 / 0.05) 0%, oklch(100% 0 0 / 0.02) 100%);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: var(--glass-border);
+    border-radius: 1.5rem;
+    box-shadow: var(--glass-shadow);
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, oklch(65% 0.2 40) 0%, oklch(60% 0.2 250) 100%); /* system-orange to system-blue in OKLCH */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

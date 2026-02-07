@@ -4,12 +4,12 @@ import LoadingScreen from '@/components/LoadingScreen';
 import Navigation from '@/components/Navigation';
 import Hero from '@/sections/Hero';
 import About from '@/sections/About';
+import Metrics from '@/sections/Metrics';
 import Skills from '@/sections/Skills';
 import Services from '@/sections/Services';
 import Projects from '@/sections/Projects';
 import Clients from '@/sections/Clients';
 import Achievements from '@/sections/Achievements';
-import GitHubSection from '@/sections/GitHubSection';
 import Contact from '@/sections/Contact';
 import Footer from '@/components/Footer';
 import './App.css';
@@ -57,11 +57,10 @@ function App() {
   return (
     <PortfolioProvider>
       {isLoading && <LoadingScreen onComplete={handleLoadingComplete} />}
-      
+
       <div
-        className={`min-h-screen bg-[#0a192f] text-white transition-opacity duration-500 ${
-          showContent ? 'opacity-100' : 'opacity-0'
-        }`}
+        className={`min-h-screen bg-[#0a192f] text-white transition-opacity duration-500 ${showContent ? 'opacity-100' : 'opacity-0'
+          }`}
       >
         {showContent && (
           <>
@@ -69,12 +68,12 @@ function App() {
             <main>
               <Hero />
               <About />
+              <Metrics />
               <Skills />
               <Services />
               <Projects />
               <Clients />
               <Achievements />
-              <GitHubSection />
               <Contact />
             </main>
             <Footer />

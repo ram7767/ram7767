@@ -48,6 +48,16 @@ module.exports = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // OKLCH Custom Colors - System Blue & Orange Theme
+        'system-blue': 'oklch(60% 0.2 250)',
+        'system-blue-light': 'oklch(70% 0.18 250)',
+        'system-orange': 'oklch(65% 0.2 40)',
+        'system-orange-light': 'oklch(70% 0.18 40)',
+        'system-teal': 'oklch(70% 0.15 180)',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",

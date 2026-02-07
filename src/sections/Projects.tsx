@@ -15,13 +15,12 @@ const Projects: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div
-          className={`text-center mb-16 transition-all duration-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
-          <p className="text-[#8b5cf6] font-medium mb-2">My Work</p>
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-system-blue to-system-orange font-medium mb-2">My Work</p>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Featured Projects</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#8b5cf6] to-[#64ffda] mx-auto rounded-full mb-6" />
+          <div className="w-20 h-1 bg-gradient-to-r from-system-blue to-system-orange mx-auto rounded-full mb-6" />
           <p className="text-[#8892b0] max-w-2xl mx-auto">
             Here are some of the mobile applications I've developed, delivering exceptional
             user experiences across iOS and cross-platform solutions.
@@ -33,9 +32,8 @@ const Projects: React.FC = () => {
           {data.testimonials.map((project: Testimonial, index: number) => (
             <div
               key={project.name}
-              className={`group relative transition-all duration-700 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
+              className={`group relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               <div className="relative h-full bg-[#112240] border border-[#8b5cf6]/20 rounded-2xl overflow-hidden transition-all hover:border-[#8b5cf6]/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#8b5cf6]/10">
@@ -47,7 +45,7 @@ const Projects: React.FC = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#112240] via-transparent to-transparent" />
-                  
+
                   {/* Role Badge */}
                   <div className="absolute top-4 left-4 px-3 py-1 bg-[#8b5cf6]/90 text-white text-xs font-medium rounded-full">
                     {project.role}
@@ -56,7 +54,7 @@ const Projects: React.FC = () => {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#8b5cf6] transition-colors">
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-system-blue group-hover:to-system-orange transition-colors">
                     {project.name}
                   </h3>
 
@@ -71,7 +69,7 @@ const Projects: React.FC = () => {
                     href={project.appLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[#8b5cf6] font-medium hover:underline"
+                    className="inline-flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-system-blue to-system-orange font-medium hover:underline"
                   >
                     View Project
                     <ExternalLink className="w-4 h-4" />
@@ -87,28 +85,27 @@ const Projects: React.FC = () => {
 
         {/* Featured App Stats */}
         <div
-          className={`mt-16 p-8 bg-gradient-to-r from-[#8b5cf6]/20 to-[#64ffda]/20 rounded-2xl border border-[#8b5cf6]/30 transition-all duration-700 delay-500 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`mt-16 p-8 bg-gradient-to-r from-system-blue/20 to-system-orange/20 rounded-2xl border border-system-blue/30 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="flex items-center justify-center gap-2 mb-2">
-                <Star className="w-6 h-6 text-[#64ffda]" />
+                <Star className="w-6 h-6 text-system-orange" />
                 <span className="text-3xl font-bold text-white">4.9</span>
               </div>
               <p className="text-[#8892b0]">Average Rating</p>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 mb-2">
-                <Download className="w-6 h-6 text-[#8b5cf6]" />
+                <Download className="w-6 h-6 text-system-blue" />
                 <span className="text-3xl font-bold text-white">500K+</span>
               </div>
               <p className="text-[#8892b0]">Total Downloads</p>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 mb-2">
-                <Users className="w-6 h-6 text-[#64ffda]" />
+                <Users className="w-6 h-6 text-system-blue" />
                 <span className="text-3xl font-bold text-white">200K+</span>
               </div>
               <p className="text-[#8892b0]">Active Users</p>

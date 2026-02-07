@@ -89,7 +89,7 @@ With a proven track record of participating in hackathons and coding competition
 
 ## 🌟 Achievements & Certificates
 
-- 🏆 **Best Hire Award** (October 2024)
+- 🏆 **Best Hire Award** (October 2025)
   - Honored with the Best Hire Award for exceptional performance, adoption of new technologies, successful management of multiple projects, and fostering a collaborative team environment.
 
 - 🍎 **iOS Development Excellence** (2023-Present)
@@ -98,7 +98,7 @@ With a proven track record of participating in hackathons and coding competition
 - ♻️ **Cross-Platform Specialist** (2022-Present)
   - Successfully developed and deployed cross-platform applications using Flutter and React Native, reaching millions of users worldwide.
 
-- 👥 **Team Leadership** (2024-Present)
+- 👥 **Team Leadership** (2025-Present)
   - Led development teams in implementing agile methodologies, improving delivery speed and code quality across multiple projects.
 
 <br>

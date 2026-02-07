@@ -1,13 +1,13 @@
 {
   "theme": {
-    "primaryBg": "#0a192f",
-    "secondaryBg": "#112240",
-    "cardBg": "#172a46",
-    "accentPurple": "#8b5cf6",
-    "accentLightPurple": "#a78bfa",
-    "textPrimary": "#8b5cf6",
-    "textSecondary": "#8892b0",
-    "highlight": "#64ffda"
+    "primaryBg": "oklch(8% 0.01 270)",
+    "secondaryBg": "oklch(12% 0.02 260)",
+    "cardBg": "oklch(100% 0 0 / 0.05)",
+    "accentPrimary": "oklch(60% 0.2 250)",
+    "accentSecondary": "oklch(65% 0.2 40)",
+    "textPrimary": "oklch(60% 0.2 250)",
+    "textSecondary": "oklch(80% 0.02 280)",
+    "highlight": "oklch(70% 0.15 180)"
   },
   "name": "Ratnakaram Rama Narasimha Raju",
   "shortName": "Ram",
@@ -72,6 +72,13 @@
     }
   ],
   "experience": [
+    {
+      "position": "Team Lead",
+      "subtitle": "Mobile Development Lead",
+      "years": "2025 — Present",
+      "company": "SoftSuave Technology",
+      "description": "Leading mobile development team across Flutter and iOS platforms. Architecting scalable solutions, establishing best practices, mentoring developers, and driving project delivery with technical excellence."
+    },
     {
       "position": "Mobile App Developer",
       "subtitle": "Flutter & iOS App Developer",
@@ -446,7 +453,7 @@
   "achievements": [
     {
       "title": "Best Hire Award",
-      "date": "October 2024",
+      "date": "October 2025",
       "icon": "fas fa-trophy",
       "image": "./assets/images/award.png",
       "description": "Honored with the Best Hire Award for exceptional performance, adoption of new technologies, successful management of multiple projects, and fostering a collaborative team environment."
@@ -467,7 +474,7 @@
     },
     {
       "title": "Team Leadership",
-      "date": "2024-Present",
+      "date": "2025-Present",
       "icon": "fas fa-users-cog",
       "image": "./assets/images/icon-app.svg",
       "description": "Led development teams in implementing agile methodologies, improving delivery speed and code quality across multiple projects."

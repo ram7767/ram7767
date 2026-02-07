@@ -42,9 +42,9 @@ const GitHubSection: React.FC = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <p className="text-[#8b5cf6] font-medium mb-2">Open Source</p>
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-system-blue to-system-orange font-medium mb-2">Open Source</p>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">GitHub Contributions</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#8b5cf6] to-[#64ffda] mx-auto rounded-full mb-6" />
+          <div className="w-20 h-1 bg-gradient-to-r from-system-blue to-system-orange mx-auto rounded-full mb-6" />
           <p className="text-[#8892b0] max-w-2xl mx-auto">
             My coding activity and contributions to the open-source community.
           </p>
@@ -57,24 +57,24 @@ const GitHubSection: React.FC = () => {
           }`}
         >
           <div className="p-6 bg-[#112240] border border-[#8b5cf6]/20 rounded-xl">
-            <GitCommit className="w-8 h-8 text-[#8b5cf6] mb-3" />
+            <GitCommit className="w-8 h-8 text-system-blue mb-3" />
             <p className="text-3xl font-bold text-white mb-1">
               {loading ? '...' : totalContributions.toLocaleString()}
             </p>
             <p className="text-[#8892b0] text-sm">Contributions</p>
           </div>
           <div className="p-6 bg-[#112240] border border-[#8b5cf6]/20 rounded-xl">
-            <Calendar className="w-8 h-8 text-[#64ffda] mb-3" />
+            <Calendar className="w-8 h-8 text-system-blue mb-3" />
             <p className="text-3xl font-bold text-white mb-1">{loading ? '...' : streak}</p>
             <p className="text-[#8892b0] text-sm">Day Streak</p>
           </div>
           <div className="p-6 bg-[#112240] border border-[#8b5cf6]/20 rounded-xl">
-            <GitBranch className="w-8 h-8 text-[#8b5cf6] mb-3" />
-            <p className="text-3xl font-bold text-white mb-1">50+</p>
-            <p className="text-[#8892b0] text-sm">Repositories</p>
+            <GitBranch className="w-8 h-8 text-system-blue mb-3" />
+            <p className="text-3xl font-bold text-white mb-1">30+</p>
+            <p className="text-[#8892b0] text-sm">GitHub Followers</p>
           </div>
           <div className="p-6 bg-[#112240] border border-[#8b5cf6]/20 rounded-xl">
-            <Star className="w-8 h-8 text-[#64ffda] mb-3" />
+            <Star className="w-8 h-8 text-system-blue mb-3" />
             <p className="text-3xl font-bold text-white mb-1">100+</p>
             <p className="text-[#8892b0] text-sm">Stars Earned</p>
           </div>
@@ -96,7 +96,7 @@ const GitHubSection: React.FC = () => {
                 href={data.socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-[#8b5cf6] hover:underline flex items-center gap-1"
+                className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-system-blue to-system-orange hover:underline flex items-center gap-1"
               >
                 View Profile
                 <TrendingUp className="w-4 h-4" />

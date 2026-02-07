@@ -54,13 +54,12 @@ const Contact: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div
-          className={`text-center mb-16 transition-all duration-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
-          <p className="text-[#8b5cf6] font-medium mb-2">Get In Touch</p>
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-system-blue to-system-orange font-medium mb-2">Get In Touch</p>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Contact Me</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#8b5cf6] to-[#64ffda] mx-auto rounded-full mb-6" />
+          <div className="w-20 h-1 bg-gradient-to-r from-system-blue to-system-orange mx-auto rounded-full mb-6" />
           <p className="text-[#8892b0] max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? I'd love to hear from you.
           </p>
@@ -69,9 +68,8 @@ const Contact: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div
-            className={`transition-all duration-700 delay-100 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+            className={`transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
           >
             <h3 className="text-2xl font-bold text-white mb-6">Let's Talk</h3>
             <p className="text-[#8892b0] mb-8">
@@ -83,13 +81,13 @@ const Contact: React.FC = () => {
             <div className="space-y-6 mb-8">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-[#8b5cf6]/20 rounded-lg flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-[#8b5cf6]" />
+                  <Mail className="w-6 h-6 text-system-blue" />
                 </div>
                 <div>
                   <p className="text-[#8892b0] text-sm">Email</p>
                   <a
                     href={`mailto:${data.email}`}
-                    className="text-white hover:text-[#8b5cf6] transition-colors"
+                    className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-system-blue hover:to-system-orange transition-colors"
                   >
                     {data.email}
                   </a>
@@ -97,8 +95,8 @@ const Contact: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#64ffda]/20 rounded-lg flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-[#64ffda]" />
+                <div className="w-12 h-12 bg-system-orange/20 rounded-lg flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-system-orange" />
                 </div>
                 <div>
                   <p className="text-[#8892b0] text-sm">Location</p>
@@ -133,14 +131,13 @@ const Contact: React.FC = () => {
 
           {/* Contact Form */}
           <div
-            className={`transition-all duration-700 delay-200 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+            className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
           >
             <div className="p-8 bg-[#112240] border border-[#8b5cf6]/20 rounded-2xl">
               {isSubmitted ? (
                 <div className="text-center py-12">
-                  <CheckCircle className="w-16 h-16 text-[#64ffda] mx-auto mb-4" />
+                  <CheckCircle className="w-16 h-16 text-system-blue mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
                   <p className="text-[#8892b0]">Thank you for reaching out. I'll get back to you soon!</p>
                 </div>
@@ -214,7 +211,7 @@ const Contact: React.FC = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full px-8 py-4 bg-[#8b5cf6] text-white rounded-lg font-medium hover:bg-[#7c3aed] transition-all hover:shadow-lg hover:shadow-[#8b5cf6]/30 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    className="w-full px-8 py-4 bg-system-blue text-white rounded-lg font-medium hover:bg-system-blue-light transition-all hover:scale-105 hover:shadow-lg hover:shadow-system-blue/30 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? (
                       <>
@@ -233,7 +230,7 @@ const Contact: React.FC = () => {
                     Or email me directly at{' '}
                     <a
                       href={`mailto:${data.email}`}
-                      className="text-[#8b5cf6] hover:underline"
+                      className="text-transparent bg-clip-text bg-gradient-to-r from-system-blue to-system-orange hover:underline"
                     >
                       {data.email}
                     </a>

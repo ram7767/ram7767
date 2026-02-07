@@ -423,7 +423,7 @@
       "reference": "https://www.hsbc.com.hk/healthpass/"
     },
     {
-      "logo": "./assets/images/CAP.PA.svg",
+      "logo": "./assets/images/capgemini.png",
       "company_name": "Capgemini",
       "reference": "#"
     },
@@ -441,7 +441,7 @@
   "achievements": [
     {
       "title": "Best Hire Award",
-      "date": "October 2024",
+      "date": "October 2025",
       "icon": "trophy",
       "description": "Honored with the Best Hire Award for exceptional performance, adoption of new technologies, successful management of multiple projects, and fostering a collaborative team environment."
     },
@@ -459,11 +459,12 @@
     },
     {
       "title": "Team Leadership",
-      "date": "2024-Present",
+      "date": "2025-Present",
       "icon": "users",
       "description": "Led development teams in implementing agile methodologies, improving delivery speed and code quality across multiple projects."
     }
   ],
-  "resumeFile": "./assets/resume/Ratnakaram's Resume-3.pdf",
-  "favicon": "./assets/images/ramIcon.ico"
+  "resumeFile": "/assets/resume/Ratnakaram's Resume-3.pdf",
+  "favicon": "./assets/images/ramIcon.ico",
+  "githubUsername": "ram7767"
 }

@@ -14,7 +14,7 @@
   "title": "Mobile Application Developer",
   "greeting": "Hi, I'm",
   "tagline": "Crafting exceptional mobile experiences with Swift, SwiftUI and Flutter",
-  "profilePic": "./assets/images/ram_profile_pic.jpg",
+  "profilePic": "./assets/images/ram_logo.png",
   "email": "rramanarasimharaju@gmail.com",
   "location": "Bengaluru, India",
   "stats": {

@@ -22,7 +22,7 @@ function App() {
     // Preload images
     const preloadImages = () => {
       const images = [
-        '/assets/images/ram_profile_pic.jpg',
+        '/assets/images/ram_logo.png',
         '/assets/images/hsbc.png',
         '/assets/images/smartwait.png',
         '/assets/images/playdate.png',

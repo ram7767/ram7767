@@ -7,6 +7,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ram7767)
+[![Portfolio](https://img.shields.io/badge/Portfolio-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ram7767.github.io/ram7767/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rramanarasimharaju@gmail.com)
 
 </div>
@@ -70,12 +71,14 @@ struct Developer {
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ram7767&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=6C63FF&text_color=C9D1D9" width="48%" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=ram7767&theme=tokyonight&hide_border=true&background=0D1117&ring=6C63FF&fire=6C63FF&currStreakLabel=6C63FF" width="48%" alt="GitHub Streak" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=ram7767&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=6C63FF&text_color=C9D1D9&count_private=true" width="48%" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com?user=ram7767&theme=tokyonight&hide_border=true&background=0D1117&ring=6C63FF&fire=6C63FF&currStreakLabel=6C63FF" width="48%" alt="GitHub Streak" />
 </div>
 
+<br/>
+
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ram7767&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&text_color=C9D1D9" width="40%" alt="Top Languages" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ram7767&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&text_color=C9D1D9&langs_count=8" width="40%" alt="Top Languages" />
 </div>
 
 ---
@@ -83,7 +86,7 @@ struct Developer {
 ## 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ram7767&theme=algolia&no-frame=true&no-bg=true&column=7" alt="GitHub Trophies" />
+  <img src="https://github-trophies.vercel.app/?username=ram7767&theme=algolia&no-frame=true&no-bg=true&column=7" alt="GitHub Trophies" />
 </div>
 
 ---
@@ -105,16 +108,6 @@ struct Developer {
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ram7767&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6C63FF&line=6C63FF&point=FFFFFF" width="95%" alt="Activity Graph" />
-</div>
-
----
-
-<div align="center">
-
-### 🐍 Watch my contributions get eaten!
-
-<img src="https://raw.githubusercontent.com/ram7767/ram7767/output/github-snake-dark.svg" alt="Snake animation" />
-
 </div>
 
 ---

@@ -1,0 +1,372 @@
+{
+  "profile": {
+    "fullName": "Ratnakaram Rama Narasimha Raju",
+    "shortName": "Ram",
+    "title": "Senior iOS & Mobile Developer",
+    "tagline": "Crafting beautiful, performant cross-platform mobile experiences.",
+    "email": "rramanarasimharaju@gmail.com",
+    "github": "https://github.com/ram7767",
+    "linkedin": "https://linkedin.com/in/",
+    "location": "Bengaluru, India",
+    "yearsOfExperience": 3,
+    "resumeUrl": "https://drive.google.com/uc?export=download&id=1s-_-UfTo5GmwtWnjcwbDhEqcheeQ1MWU",
+    "resumeFilename": "ratnakaram_rama_narasimha_raju.pdf",
+    "bio": [
+      "I'm a mobile engineer with three plus years building production iOS and cross-platform apps. My day-to-day is split between Swift and SwiftUI for native iOS and Dart and Flutter for cross-platform work, with a strong bias toward clean architecture, reactive patterns, and shipping software that feels effortless.",
+      "I care deeply about the details that separate good apps from great ones: thoughtful animation, predictable state, fast cold-start, and interfaces that respect the user. I've shipped messaging, productivity, commerce, and Firebase-backed products from greenfield to App Store.",
+      "When I'm not writing code, I'm refining design systems, mentoring teammates, and exploring how new platform capabilities can make the next release a little quieter, a little faster, and a little more delightful."
+    ],
+    "highlights": [
+      { "label": "Years of experience", "value": "3+" },
+      { "label": "Apps shipped", "value": "12+" },
+      { "label": "Platforms", "value": "iOS · Flutter" },
+      { "label": "Focus", "value": "Architecture · Polish" }
+    ],
+    "askMeAbout": [
+      "iOS",
+      "SwiftUI",
+      "UIKit",
+      "Swift Concurrency",
+      "Flutter",
+      "Dart",
+      "Bloc",
+      "Provider",
+      "Firebase",
+      "Firestore",
+      "CoreData",
+      "SwiftData",
+      "Combine",
+      "Async / Await",
+      "MVVM",
+      "Clean Architecture",
+      "Performance",
+      "Animations",
+      "Push Notifications",
+      "CI/CD",
+      "Fastlane",
+      "App Store Release"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Senior iOS & Mobile Developer",
+      "company": "Softsuave",
+      "period": "2023 — Now",
+      "location": "Bengaluru, India",
+      "summary": "Designing and shipping native iOS and cross-platform mobile apps for global clients across fintech, health, and consumer.",
+      "highlights": [
+        "Senior iOS developer on client apps spanning HSBC Health, Payslate, Playdate, Milagro SmartWait, and Marina Racquet Club.",
+        "Architected SwiftUI + UIKit hybrid screens, MVVM + Clean Architecture, async/await migrations, and CoreData/SwiftData persistence layers.",
+        "Delivered Flutter apps with Bloc state management, Firebase integration, and offline-first SQLite storage.",
+        "Owned end-to-end App Store release pipelines: Fastlane lanes, Xcode Cloud, TestFlight rollouts, and crash triage via Crashlytics.",
+        "Mentored juniors, ran code reviews, and set architecture standards across the mobile guild."
+      ],
+      "tags": [
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Flutter",
+        "Firebase",
+        "Fastlane",
+        "Xcode Cloud",
+        "MVVM"
+      ]
+    }
+  ],
+  "skills": {
+    "groups": [
+      {
+        "title": "Languages",
+        "items": [
+          { "name": "Swift", "level": 5 },
+          { "name": "Dart", "level": 5 },
+          { "name": "Objective-C", "level": 4 },
+          { "name": "TypeScript", "level": 4 },
+          { "name": "JavaScript", "level": 4 },
+          { "name": "Python", "level": 4 },
+          { "name": "Kotlin", "level": 3 },
+          { "name": "Java", "level": 3 },
+          { "name": "HTML", "level": 4 },
+          { "name": "CSS", "level": 4 }
+        ]
+      },
+      {
+        "title": "Frameworks",
+        "items": [
+          { "name": "SwiftUI", "level": 5 },
+          { "name": "UIKit", "level": 5 },
+          { "name": "Flutter", "level": 5 },
+          { "name": "Combine", "level": 4 },
+          { "name": "Bloc", "level": 5 },
+          { "name": "Provider", "level": 4 },
+          { "name": "GetX", "level": 4 },
+          { "name": "Riverpod", "level": 3 },
+          { "name": "RxSwift", "level": 3 },
+          { "name": "SnapKit", "level": 4 }
+        ]
+      },
+      {
+        "title": "Backend",
+        "items": [
+          { "name": "Firebase", "level": 5 },
+          { "name": "FastAPI", "level": 4 },
+          { "name": "Node.js", "level": 4 },
+          { "name": "Express", "level": 4 },
+          { "name": "REST", "level": 5 },
+          { "name": "GraphQL", "level": 3 },
+          { "name": "gRPC", "level": 3 },
+          { "name": "Supabase", "level": 3 },
+          { "name": "AWS Lambda", "level": 3 },
+          { "name": "Cloud Functions", "level": 4 }
+        ]
+      },
+      {
+        "title": "Databases",
+        "items": [
+          { "name": "CoreData", "level": 5 },
+          { "name": "SwiftData", "level": 4 },
+          { "name": "Realm", "level": 4 },
+          { "name": "SQLite", "level": 5 },
+          { "name": "sqflite", "level": 5 },
+          { "name": "Firestore", "level": 5 },
+          { "name": "Realtime DB", "level": 4 },
+          { "name": "PostgreSQL", "level": 4 },
+          { "name": "Hive", "level": 4 },
+          { "name": "Isar", "level": 3 }
+        ]
+      },
+      {
+        "title": "CI/CD",
+        "items": [
+          { "name": "Fastlane", "level": 5 },
+          { "name": "GitHub Actions", "level": 5 },
+          { "name": "Xcode Cloud", "level": 4 },
+          { "name": "Bitrise", "level": 4 },
+          { "name": "CircleCI", "level": 3 },
+          { "name": "TestFlight", "level": 5 },
+          { "name": "App Store Connect", "level": 5 },
+          { "name": "Codemagic", "level": 3 },
+          { "name": "Jenkins", "level": 3 },
+          { "name": "Crashlytics", "level": 5 }
+        ]
+      },
+      {
+        "title": "Tools",
+        "items": [
+          { "name": "Xcode", "level": 5 },
+          { "name": "VS Code", "level": 5 },
+          { "name": "Android Studio", "level": 4 },
+          { "name": "Git", "level": 5 },
+          { "name": "Figma", "level": 4 },
+          { "name": "Postman", "level": 5 },
+          { "name": "Charles Proxy", "level": 4 },
+          { "name": "Sketch", "level": 3 },
+          { "name": "Sourcetree", "level": 4 },
+          { "name": "Jira", "level": 4 }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "HSBC Health",
+      "slug": "hsbc-health",
+      "client": "HSBC",
+      "platform": "iOS",
+      "description": "Health and wellness app for HSBC employees with onboarding, secure auth, and personalised programmes across regions.",
+      "tags": ["Swift", "SwiftUI", "Auth", "HealthKit"],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/gb/app/hsbc-health/id1535000668",
+          "kind": "ios"
+        }
+      ]
+    },
+    {
+      "name": "Payslate",
+      "slug": "payslate",
+      "client": "Dotmite",
+      "platform": "iOS · Android",
+      "description": "Business transactions application that lets users initiate, approve and track payments and statements across iOS and Android with secure auth and real-time updates.",
+      "tags": ["Swift", "Flutter", "Firebase", "REST"],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/pg/app/payslate/id6737227735",
+          "kind": "ios"
+        },
+        {
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.dotmite.payslate",
+          "kind": "android"
+        }
+      ]
+    },
+    {
+      "name": "Playdate · Secure Family Chat",
+      "slug": "playdate-family-chat",
+      "client": "Playdate",
+      "platform": "iOS",
+      "description": "End-to-end secure family chat designed for safe, age-appropriate messaging between parents and kids.",
+      "tags": ["Swift", "Encryption", "Realtime", "Push"],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/in/app/playdate-secure-family-chat/id1592518146",
+          "kind": "ios"
+        }
+      ]
+    },
+    {
+      "name": "Playdate for Children",
+      "slug": "playdate-children",
+      "client": "Playdate",
+      "platform": "iOS",
+      "description": "Kid-friendly companion app from the Playdate family with safe interaction patterns and parental controls.",
+      "tags": ["Swift", "SwiftUI", "Kids Category"],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/us/app/playdate-for-children/id6462308951",
+          "kind": "ios"
+        }
+      ]
+    },
+    {
+      "name": "Milagro SmartWait",
+      "slug": "milagro-smartwait",
+      "client": "Milagro",
+      "platform": "iOS",
+      "description": "Patient queue & wait-time management app that reduces in-clinic waits and surfaces real-time status updates.",
+      "tags": ["Swift", "REST", "Notifications", "Healthcare"],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/in/app/milagro-smartwait/id1465908192",
+          "kind": "ios"
+        }
+      ]
+    },
+    {
+      "name": "Marina Racquet Club",
+      "slug": "marina-racquet-club",
+      "client": "MRC",
+      "platform": "iOS",
+      "description": "Member-facing app for Marina Racquet Club: court bookings, events, news and member services.",
+      "tags": ["Swift", "SwiftUI", "REST", "Push"],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/us/app/marina-racquet-club/id6477963786",
+          "kind": "ios"
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Apple Developer Program member",
+      "description": "Registered Apple Developer with production App Store releases and TestFlight rollout experience.",
+      "year": "2023 — Now",
+      "tags": ["Apple", "App Store Connect"],
+      "kind": "certificate"
+    },
+    {
+      "title": "SwiftUI Fundamentals — Apple Developer",
+      "description": "Completed Apple's official SwiftUI learning track covering layout, state, animations, and modern declarative UI.",
+      "year": "2023",
+      "tags": ["SwiftUI", "Apple"],
+      "kind": "certificate"
+    },
+    {
+      "title": "Swift Bootcamp — completion",
+      "description": "Comprehensive Swift bootcamp covering language fundamentals, protocol-oriented programming, generics, and modern concurrency.",
+      "year": "2023",
+      "tags": ["Swift", "Bootcamp"],
+      "kind": "certificate"
+    },
+    {
+      "title": "iOS & Swift — The Complete iOS App Development Bootcamp",
+      "description": "Udemy course by Dr. Angela Yu covering iOS development end-to-end: UIKit, SwiftUI, Firebase, networking, and App Store release.",
+      "year": "2023",
+      "tags": ["Udemy", "iOS", "Swift"],
+      "kind": "certificate"
+    },
+    {
+      "title": "Flutter & Dart — The Complete Guide",
+      "description": "Udemy course by Maximilian Schwarzmüller covering Flutter widgets, state management, Firebase, REST APIs, and platform integration.",
+      "year": "2023",
+      "tags": ["Udemy", "Flutter", "Dart"],
+      "kind": "certificate"
+    },
+    {
+      "title": "SwiftUI Masterclass — Build iOS Apps",
+      "description": "Udemy SwiftUI deep-dive covering declarative UI patterns, animations, Combine, and modern iOS architecture.",
+      "year": "2024",
+      "tags": ["Udemy", "SwiftUI", "Combine"],
+      "kind": "certificate"
+    },
+    {
+      "title": "Star Performer — Softsuave",
+      "description": "Recognised for consistent delivery and ownership across multiple client mobile apps in production.",
+      "year": "2024",
+      "tags": ["Recognition", "Softsuave"],
+      "kind": "award"
+    },
+    {
+      "title": "Client appreciation — HSBC",
+      "description": "Acknowledged by HSBC for the on-time delivery and post-launch polish of the HSBC Health iOS app.",
+      "year": "2024",
+      "tags": ["Client", "Delivery"],
+      "kind": "award"
+    }
+  ],
+  "services": [
+    {
+      "title": "Native iOS Development",
+      "description": "End-to-end iOS apps in Swift and SwiftUI with MVVM + Clean Architecture, async/await, and CoreData/SwiftData persistence.",
+      "metric": { "value": "6+", "label": "App Store releases" },
+      "icon": "swift"
+    },
+    {
+      "title": "Cross-platform with Flutter",
+      "description": "Flutter apps for iOS and Android with Bloc state management, Firebase integration, and offline-first storage.",
+      "metric": { "value": "iOS + Android", "label": "Single codebase" },
+      "icon": "flutter"
+    },
+    {
+      "title": "Firebase & Backend Integration",
+      "description": "Auth, Firestore, FCM, Crashlytics, Cloud Functions — wired end-to-end with secure, real-time data flows.",
+      "metric": { "value": "5+", "label": "Firebase modules" },
+      "icon": "cloud"
+    },
+    {
+      "title": "Mobile Architecture & Code Review",
+      "description": "Production-grade MVVM, Clean Architecture, async/await migrations, reactive patterns, and code reviews that ship.",
+      "metric": { "value": "100%", "label": "Test-covered cores" },
+      "icon": "architecture"
+    },
+    {
+      "title": "CI/CD & Release Engineering",
+      "description": "Fastlane lanes, Xcode Cloud, GitHub Actions, TestFlight rollouts, App Store Connect automation, and crash triage.",
+      "metric": { "value": "1-click", "label": "Releases" },
+      "icon": "cicd"
+    },
+    {
+      "title": "Performance & UX Polish",
+      "description": "60fps animations, fast cold start, low memory footprint, smooth scroll, and the small details that separate good from great.",
+      "metric": { "value": "60fps", "label": "Target frame rate" },
+      "icon": "polish"
+    }
+  ],
+  "clients": ["HSBC", "Capgemini", "Dotmite", "Playdate", "Milagro", "MRC", "Softsuave"],
+  "contact": {
+    "emailjs": {
+      "serviceId": "",
+      "templateId": "",
+      "publicKey": ""
+    },
+    "toEmail": "rramanarasimharaju@gmail.com"
+  }
+}

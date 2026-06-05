@@ -40,8 +40,8 @@ struct Developer {
 // Typing pacing — uniform rhythm. Every character emits at the same
 // interval so the typer reads as one continuous, deliberate stream
 // (no per-char pauses or "stutters" around punctuation/newlines).
-const TICK_MS = 180; // ~5.5 chars/sec, single steady beat
-const HOLD_AFTER_COMPLETE_MS = 5500;
+const TICK_MS = 40; // ~25 chars/sec — fast, continuous feel
+const HOLD_AFTER_COMPLETE_MS = 2500;
 
 // Count newlines in CODE[0..end). Used to detect line-crossings for autoscroll.
 function newlinesUpTo(end: number): number {
